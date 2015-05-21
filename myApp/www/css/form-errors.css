@@ -1,0 +1,28 @@
+/** Styling for the username field **/
+label.item.has-error {
+    border-bottom: 2px solid red;
+}
+
+/** Styling for the password field when an error exists**/
+label.item.has-error-lr {
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+}
+
+/** Styling for the password field when an error has been resolved**/
+label.item.valid-lr {
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+}
+
+/** Styling for the error text and container **/
+.form-errors {
+    margin: 0px;
+    left: 0;
+}
+.form-error {
+    padding: 0 0 0 16px;
+    text-align: start;
+    font-size: 12px;
+    color: red;
+}
