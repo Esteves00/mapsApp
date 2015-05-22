@@ -244,7 +244,6 @@ angular.module('socom-maps', [])
                 onCreate: '&'
             },
             link: function ($scope, $element) {
-                console.log('starting maps directive');
                 var markerGroups = [];
                 var modal;
                 var addMarkerEvents = function (map, marker, operatorName, operatorInfo) {
@@ -505,6 +504,7 @@ angular.module('socom-maps', [])
                 };
 
                 function initialize() {
+                    console.log('instantiating maps controller');
                     var mapOptions = {
                         center: new L.LatLng(43.07493, -89.381388),
                         zoom: 15,
@@ -514,6 +514,7 @@ angular.module('socom-maps', [])
                         minZoom: 11
                     };
                     $scope.map = new Map(new L.Map($element[0], mapOptions), drawLines, addOperatorMarker, addHostileMarker);
+                    console.log('creating map layers');
                     var googleLayerSattelite = new L.Google('SATELLITE');
                     var googleLayerRoadMap = new L.Google('ROADMAP');
                     var googleLayerHybrid = new L.Google('HYBRID');
@@ -532,6 +533,7 @@ angular.module('socom-maps', [])
                         maxZoom: 22,
                         minZoom: 11
                     });
+                    console.log('map ready');
                     $scope.onCreate({map: $scope.map});
                     $scope.map.map.on('click', function (e) {
                             var latLng = new L.LatLng(e.latlng.lat, e.latlng.lng);
@@ -561,6 +563,7 @@ angular.module('socom-maps', [])
                             }
                         }
                     );
+                    console.log('centering on position');
                     centerOnCurrentLocation();
                 }
 
