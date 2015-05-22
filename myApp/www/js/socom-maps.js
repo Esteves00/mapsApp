@@ -244,6 +244,7 @@ angular.module('socom-maps', [])
                 onCreate: '&'
             },
             link: function ($scope, $element) {
+                console.log('starting maps directive');
                 var markerGroups = [];
                 var modal;
                 var addMarkerEvents = function (map, marker, operatorName, operatorInfo) {
