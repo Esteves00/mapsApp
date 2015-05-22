@@ -1,14 +1,38 @@
-angular.module('starter.map', []).factory('Map', function (PlayableArea, Squad, Operator) {
+angular.module('starter.map', []).factory('Map', function (PlayableArea, Squad, Operator, Hostile) {
     /**
      * Constructor, with class name
      */
-    function Map(map, playableAreaCallback, operatorCallback) {
+    function Map(map, playableAreaCallback, operatorCallback, hostileCallBack) {
         this.playablearea = new PlayableArea();
         this.squads = [];
         this.map = map;
         this.playableAreaCallback = playableAreaCallback;
         this.operatorCallback = operatorCallback;
+        this.hostileCallBack = hostileCallBack;
+        this.hostiles = [];
     }
+
+
+    Map.prototype.addHostile = function (hostile) {
+        if (!hostile instanceof Hostile) {
+            console.log('Trying to add an non Hostile object!!');
+        } else {
+            this.hostiles[hostile.id] = (hostile);
+            if (this.hostileCallBack) {
+                this.hostileCallBack(hostile);
+            }
+        }
+    };
+    Map.prototype.removeHostile = function (hostile) {
+        if (!hostile instanceof Hostile) {
+            console.log('Trying to remove an non Hostile object!!');
+        }
+        this.hostiles.splice(hostile);
+    };
+    Map.prototype.getHostile = function (hostile) {
+        return this.hostiles[hostile];
+    };
+
 
     Map.prototype.addSquad = function (squad) {
         if (!squad instanceof Squad) {
@@ -43,7 +67,7 @@ angular.module('starter.map', []).factory('Map', function (PlayableArea, Squad, 
         } else {
             this.squads[squadId].addOperator(operator);
             if (this.operatorCallback) {
-                this.operatorCallback(operator, squadId, operator.latitude, operator.longitude);
+                this.operatorCallback(operator, squadId);
             }
         }
     };

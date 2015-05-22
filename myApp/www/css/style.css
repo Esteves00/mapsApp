@@ -239,6 +239,14 @@ map {
     border-color: transparent #FF5D00 #FF5D00 transparent;
 }
 
+.pin-red {
+    background: #B71C1C url("../img/HOS-NOSPEC.png") no-repeat bottom
+}
+
+.pin-red:after {
+    border-color: transparent #B71C1C #B71C1C transparent;
+}
+
 .custom-popup .leaflet-popup {
     bottom: 80px !important;
 }

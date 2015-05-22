@@ -18,8 +18,8 @@ angular.module('starter.directives', ['ionic'])
                             "<p style='font-family: captureit;'>" + operatorInfo + "</p>")
                     );
                 };
-                var addOperatorMarker = function (operator, squadId, latitude, longitude) {
-                    var coordinates = new L.LatLng(latitude, longitude);
+                var addOperatorMarker = function (operator, squadId) {
+                    var coordinates = new L.LatLng(operator.latitude, operator.longitude);
                     if (insidePlayableArea($scope.map, coordinates)) {
                         var marker = new L.Marker(coordinates,
                             {
@@ -67,6 +67,24 @@ angular.module('starter.directives', ['ionic'])
                         markerGroups[squadId].addTo($scope.layers[squadId]);
                     }
                 };
+                var addHostileMarker = function (hostile) {
+                    var coordinates = new L.LatLng(hostile.latitude, hostile.longitude);
+                    if (insidePlayableArea($scope.map, coordinates)) {
+                        var marker = new L.Marker(coordinates,
+                            {
+
+                                //icon: new L.Icon({iconUrl: 'img/skull_red.png'}),
+                                icon: new L.DivIcon({
+                                    html: "<div class='pin pin-red' nickname='" + hostile.enemiesNumber + "'></div>",
+                                    iconSize: new L.Point(0, 0)
+                                }),
+                                title: 'Inimigo nas redondezas'
+                            }
+                        );
+                        marker.addTo($scope.map.map);
+                        addMarkerEvents($scope.map.map, marker, hostile.enemiesNumber, 'Element info');
+                    }
+                };
                 var centerOnCurrentLocation = function () {
                     if (!$scope.map) {
                         return;
@@ -97,7 +115,7 @@ angular.module('starter.directives', ['ionic'])
                     navigator.geolocation.getCurrentPosition(successCurrentPosition, error);
                     navigator.geolocation.watchPosition(successWatchPosition, error);
                 };
-                var createPopup = function (options, callback) {
+                var createPopup = function (options, callback, latLng) {
                     if (options && options instanceof Array && options.length > 0) {
                         var option = options.shift();
                         for (var property in option.options) {
@@ -110,6 +128,10 @@ angular.module('starter.directives', ['ionic'])
                             animation: 'slide-in-up'
                         }).then(function (modal) {
                             callback(modal);
+                            console.log(latLng);
+                            if (latLng) {
+                                $scope.latLng = latLng
+                            }
                         });
                     }
                 };
@@ -201,6 +223,8 @@ angular.module('starter.directives', ['ionic'])
                                     onclick: function (value) {
                                         if ($scope.enemiesNumber && value) {
                                             $rootScope.$broadcast('enemyDetected', {
+                                                latitude: $scope.latLng.lat,
+                                                longitude: $scope.latLng.lng,
                                                 enemiesNumber: $scope.enemiesNumber,
                                                 direction: value
                                             })
@@ -217,7 +241,7 @@ angular.module('starter.directives', ['ionic'])
                                 }
                                 (modal = _modal).show();
                             });
-                    }else{
+                    } else {
                         modal.remove();
                     }
                 };
@@ -251,7 +275,7 @@ angular.module('starter.directives', ['ionic'])
                         maxZoom: 22,
                         minZoom: 11
                     };
-                    $scope.map = new Map(new L.Map($element[0], mapOptions), drawLines, addOperatorMarker);
+                    $scope.map = new Map(new L.Map($element[0], mapOptions), drawLines, addOperatorMarker, addHostileMarker);
                     var googleLayerSattelite = new L.Google('SATELLITE');
                     var googleLayerRoadMap = new L.Google('ROADMAP');
                     var googleLayerHybrid = new L.Google('HYBRID');
@@ -287,7 +311,7 @@ angular.module('starter.directives', ['ionic'])
                                                 {label: '5-7', value: '5-7'},
                                                 {label: '+7', value: '+7'},
                                             ], [
-                                                {label: 'Cancel', className:'btn-direction-cancel'}
+                                                {label: 'Cancel', className: 'btn-direction-cancel'}
                                             ]],
                                             onclick: onEnemiesPopupSelected,
                                             stylesheets: [{href: 'css/enemies.css', type: 'text/css'}]
@@ -295,7 +319,7 @@ angular.module('starter.directives', ['ionic'])
                                     }],
                                     function (_modal) {
                                         (modal = _modal).show();
-                                    });
+                                    }, latLng);
                             }
                         }
                     );
