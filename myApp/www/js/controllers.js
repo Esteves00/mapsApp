@@ -73,6 +73,10 @@ angular.module('starter.controllers', ['starter.services'])
                     alert('Error!');
                 });
             });
+            $scope.$on('enemyDetected', function (event, enemy) {
+                console.log(enemy);
+                alert("Enemies Number:" + enemy.enemiesNumber + "\nDirection: " + enemy.direction);
+            });
             ref.on('child_added', function (child) {
                 var mk = child.val();
                 $scope.map.addOperator(1, new Operator(mk.id, mk.nickname, mk.position.latitude, mk.position.longitude, Specialization.get(mk.specialization)));
