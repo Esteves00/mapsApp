@@ -1,4 +1,4 @@
-angular.module('starter.directives', ['ionic'])
+angular.module('socom-maps', [])
     .factory('Direction', function () {
 
         var direction = {

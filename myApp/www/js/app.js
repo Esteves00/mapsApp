@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', "firebase", 'starter.controllers', 'starter.directives'])
+angular.module('starter', ['ionic', "firebase", 'starter.controllers', 'socom-maps'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
