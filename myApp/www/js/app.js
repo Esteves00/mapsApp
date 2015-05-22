@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', "firebase", 'starter.controllers', 'starter.directives', 'starter.playablearea', 'starter.operator', 'starter.squad', 'starter.map', 'starter.specialization', 'starter.direction', 'starter.hostile'])
+angular.module('starter', ['ionic', "firebase", 'starter.controllers', 'starter.directives'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {

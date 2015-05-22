@@ -1,5 +1,242 @@
 angular.module('starter.directives', ['ionic'])
+    .factory('Direction', function () {
 
+        var direction = {
+            NORTH_EAST: "ne",
+            NORTH : "n",
+            NORTH_WEST : "nw",
+            EAST : "e",
+            CAMPER : "c",
+            WEST : "w",
+            SOUTH_EAST: "se",
+            SOUTH : "s",
+            SOUTH_WEST : "sw"
+        };
+
+        direction.get = function (key) {
+            return direction[key];
+        };
+
+
+        return direction;
+    })
+    .factory('EnemiesNumber', function () {
+
+        var enemiesNumber = {
+            ONE: "1",
+            TWO: "2",
+            THREE_FIVE: "3-5",
+            FIVE_SEVEN: "5-7",
+            PLUS_SEVEN: "+7"
+        };
+
+        enemiesNumber.get = function (key) {
+            return enemiesNumber[key];
+        };
+
+
+        return enemiesNumber;
+    })
+    .factory('Hostile', function (Direction) {
+
+        /**
+         * Constructor, with class name
+         */
+        function Hostile(latitude, longitude, enemiesNumber, direction) {
+            this.latitude = latitude;
+            this.longitude = longitude;
+            this.enemiesNumber = enemiesNumber;
+            this.direction = Direction.get(direction);
+        }
+
+        return Hostile;
+    })
+    .factory('Map', function (PlayableArea, Squad, Operator, Hostile) {
+        /**
+         * Constructor, with class name
+         */
+        function Map(map, playableAreaCallback, operatorCallback, hostileCallBack) {
+            this.playablearea = new PlayableArea();
+            this.squads = [];
+            this.map = map;
+            this.playableAreaCallback = playableAreaCallback;
+            this.operatorCallback = operatorCallback;
+            this.hostileCallBack = hostileCallBack;
+            this.hostiles = [];
+        }
+
+
+        Map.prototype.addHostile = function (hostile) {
+            if (!hostile instanceof Hostile) {
+                console.log('Trying to add an non Hostile object!!');
+            } else {
+                this.hostiles[hostile.id] = (hostile);
+                if (this.hostileCallBack) {
+                    this.hostileCallBack(hostile);
+                }
+            }
+        };
+        Map.prototype.removeHostile = function (hostile) {
+            if (!hostile instanceof Hostile) {
+                console.log('Trying to remove an non Hostile object!!');
+            }
+            this.hostiles.splice(hostile);
+        };
+        Map.prototype.getHostile = function (hostile) {
+            return this.hostiles[hostile];
+        };
+
+
+        Map.prototype.addSquad = function (squad) {
+            if (!squad instanceof Squad) {
+                console.log('Trying to add an non Squad object!!');
+            } else {
+                this.squads[squad.id] = (squad);
+            }
+        };
+        Map.prototype.removeSquad = function (squad) {
+            if (!squad instanceof Squad) {
+                console.log('Trying to remove an non Squad object!!');
+            }
+            this.squads.splice(squad);
+        };
+        Map.prototype.getSquad = function (squadId) {
+            return this.squads[squadId];
+        };
+        Map.prototype.setPlayableArea = function (playableareapoints) {
+            if (!(playableareapoints instanceof Array)) {
+                console.log('Trying to add an non Array object!!');
+            } else {
+                console.log(this.playablearea);
+                var success = this.playablearea.setPoints(playableareapoints);
+                if (success && this.playableAreaCallback) {
+                    this.playableAreaCallback(playableareapoints);
+                }
+            }
+        };
+        Map.prototype.addOperator = function (squadId, operator) {
+            if (!operator instanceof Operator) {
+                console.log('Trying to add an non Operator object!!');
+            } else {
+                this.squads[squadId].addOperator(operator);
+                if (this.operatorCallback) {
+                    this.operatorCallback(operator, squadId);
+                }
+            }
+        };
+        Map.prototype.removeOperator = function (squadId, operator) {
+            if (!element instanceof Operator) {
+                console.log('Trying to remove an non Operator object!!');
+                console.log('Trying to remove an non Operator object!!');
+            }
+            this.squads[squadId].splice(operator);
+        };
+        return Map;
+    })
+    .factory('Operator', function (Specialization) {
+
+        /**
+         * Constructor, with class name
+         */
+        function Operator(username, nickname, latitude, longitude, specialization) {
+            this.username = username;
+            this.nickname = nickname;
+            this.latitude = latitude;
+            this.longitude = longitude;
+            this.specialization = Specialization.get(specialization); //
+        }
+
+        return Operator;
+    })
+    .factory('PlayableArea', function () {
+        /**
+         * Constructor, with class name
+         */
+        function PlayableArea() {
+            this.points = [];
+        }
+
+        PlayableArea.prototype.setPoints = function (playableareapoints) {
+            var pointsAux = [];
+            for (var i = 0; i < playableareapoints.length; i++) {
+                var point = playableareapoints[i];
+                if (!(point instanceof L.LatLng)) {
+                    console.log('Trying to add an non L.LatLng object!!');
+                    return false;
+                } else {
+                    pointsAux[i] = point;
+                }
+            }
+            this.points = pointsAux;
+            return true;
+        };
+        return PlayableArea;
+    })
+    .factory('Specialization', function () {
+
+        var specialization = {
+            INFANTRY: "img/infantry.png",
+            MEDIC: "img/medic.png",
+            MAINTENANCE: "img/maintenance.png",
+            RECON: "img/recon.png",
+            SPECIAL_FORCE: "img/special_force.png",
+            SIGNALS: "img/signals.png",
+            SOF: "img/sof.png",
+            ENGINEER: "img/engineer.png",
+            RADAR: "img/radar.png",
+            TRANSPORTATION: "IMG/TRANSPORTATION.PNG",
+            ARMOVRED: "img/armovred.png",
+            ANTI_TANK: "img/anti_tank.png",
+            MORTAR: "img/mortar.png",
+            GUNNER: "img/mortar.png",
+            LOADER: "img/mortar.png",
+            ARTELLERY: "img/artellery.png",
+            BRIDGING: "img/bridging.png",
+
+        };
+
+        specialization.get = function (key) {
+            return specialization[key];
+        };
+
+
+        return specialization;
+    })
+    .factory('Squad', function (Operator) {
+
+        /**
+         * Constructor, with class name
+         */
+        function Squad(id, operators, image) {
+            this.id = id;
+            this.operators = [];
+            if (!operators instanceof Array) {
+                console.log('Trying to add an non Array object!!');
+            } else if(operators){
+                for (var i = 0; i < operators.length; i++) {
+                    var obj = operators[i];
+                    this.addOperator(obj);
+                }
+            }
+        }
+        Squad.prototype.addOperator = function (operator) {
+            if (!operator instanceof Operator) {
+                console.log('Trying to add an non Operator object!!');
+            } else {
+                this.operators[operator.username] = operator;
+            }
+        };
+        Squad.prototype.removeOperator = function (operator) {
+            if (!operator instanceof Operator) {
+                console.log('Trying to remove an non Operator object!!');
+            }
+            this.operators.splice(operator);
+        };
+        Squad.prototype.operatorsCount = function () {
+            return this.operators.length;
+        };
+        return Squad;
+    })
     .directive('map', function ($ionicLoading, $ionicPopup, $ionicModal, Map, $rootScope) {
         return {
             restrict: 'E',
@@ -337,5 +574,4 @@ angular.module('starter.directives', ['ionic'])
             }
         }
     }
-)
-;
+);
