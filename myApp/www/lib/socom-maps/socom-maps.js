@@ -340,7 +340,7 @@ angular.module('socom-maps', [])
                     };
                     var error = function (error) {
                         $ionicPopup.show({
-                            title: "Não foi possível encontrar a localização",
+                            title: "It was not possible to get your location",
                             template: error.message,
                             scope: $scope,
                             buttons: [{

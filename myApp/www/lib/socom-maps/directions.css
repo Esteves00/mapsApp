@@ -1,0 +1,112 @@
+.button.activated{
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+.btn-direction {
+    height: 100%;
+    width: 100%;
+    /*border: 1px solid whitesmoke;*/
+    border-radius: 0;
+    margin: 3px;
+    background: transparent;
+    -webkit-transition: none;
+    transition: none;
+
+}
+
+.btn-direction-ne:after, .btn-direction-n:after, .btn-direction-nw:after,
+.btn-direction-e:after,.btn-direction-c:after,.btn-direction-w:after,
+.btn-direction-se:after,.btn-direction-s:after,.btn-direction-sw:after{
+    background: url("../../img/arrow2.png") no-repeat center;
+    background-size: 80px;
+}
+.btn-direction-ne:active:after, .btn-direction-n:active:after, .btn-direction-nw:active:after,
+.btn-direction-ne:hover:after, .btn-direction-n:hover:after, .btn-direction-nw:hover:after,
+.btn-direction-e:active:after,.btn-direction-c:active:after,.btn-direction-w:active:after,
+.btn-direction-e:hover:after,.btn-direction-c:hover:after,.btn-direction-w:hover:after,
+.btn-direction-se:active:after,.btn-direction-s:active:after,.btn-direction-sw:active:after,
+.btn-direction-se:hover:after,.btn-direction-s:hover:after,.btn-direction-sw:hover:after,
+{
+    background: url("../../img/arrow2_hover.png") no-repeat center;
+    background-size: 80px;
+}
+
+.btn-direction-c:after {
+    background: url("../../img/shield.png") no-repeat center;
+    background-size: 80px;
+}
+.btn-direction-c:active:after {
+    background: url("../../img/shield_hover.png") no-repeat center;
+    background-size: 80px;
+}
+
+.btn-direction-ne:after {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.btn-direction-e:after {
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.btn-direction-se:after {
+    -ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.btn-direction-sw:after {
+    -ms-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.btn-direction-s:after {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.btn-direction-nw:after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btn-direction-w:after {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.btn-cancel{
+    background-size:16px 16px;
+    font: normal 35px/normal captureit;
+    color: #B71C1C;
+}
+.btn-cancel:hover{
+    color: #fff;
+    text-shadow: 0 0 30px #B71C1C, 0 0 50px #B71C1C;
+}
+.row-directions {
+    height: 20%;
+    margin-bottom: 5px;
+}
+
+.container-directions {
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+.modal-title{
+    font-family: captureit;
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 10px 0;
+    margin: 0;
+    height: 20%;
+}
