@@ -1,0 +1,16 @@
+<ion-view view-title="Map" align-title="left" class="login-view">
+    <ion-content scroll="false" data-tap-disabled="true">
+        <div class="row row-center" style="height: 100%">
+            <ion-scroll direction="y" class="pnl-map-buttons">
+                <button class="button button-large button-full button-dark" data-ng-repeat="i in [1,2,3,4,5, 6, 7, 8, 9, 10]">{{i}}</button>
+            </ion-scroll>
+            <div class="col " style="height: 100%">
+                <!--<div class='pin' nickname="semecher"  style='background: #219710 url("img/xpto.png") no-repeat bottom'></div><div class='pulse'></div>-->
+                <map  class='custom-popup' on-create="mapCreated(map)"></map>
+            </div>
+             <ion-scroll direction="y" class="pnl-map-buttons">
+                <button class="button button-large button-small button-full button-dark" data-ng-repeat="i in [1,2,3,4,5, 6, 7, 8, 9, 10]">{{i}}</button>
+            </ion-scroll>
+        </div>
+    </ion-content>
+</ion-view>

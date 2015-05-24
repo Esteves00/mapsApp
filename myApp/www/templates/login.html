@@ -1,0 +1,46 @@
+<ion-view view-title="Login" align-title="left" class="login-view">
+    <ion-content class="login-content login-content-body">
+        <div class="item-text-wrap light text-center padding-top">
+            <h1 style="font-family: captureit">Associação Portuguesa de Milsim e Airsoft</h1>
+        </div>
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+            </div>
+        </div>
+        <div class="list text-center" style="width: 80%;margin: auto">
+            <div class="list-header">
+                <h1 class="login-label">SOCOM BO Operator</h1>
+            </div>
+            <form name="signinForm" novalidate="" ng-submit="signIn(signinForm)" style="width: 95%;margin:auto">
+                <div style="height: 60px">
+                    <div class="item item-input">
+                        <input class="input-login light" type="text" ng-model="login.email" placeholder="Email"
+                               ng-disabled="submitted"
+                               required name="email"/>
+                    </div>
+                    <div class="form-errors">
+                        <p class="form-error" ng-if="signinForm.email.$error.required && signinForm.$submitted">
+                            Introduza o seu email
+                        </p>
+                    </div>
+                </div>
+                <div style="height: 60px">
+                    <div class="item item-input">
+                        <input class="input-login light" type="password" ng-model="login.password"
+                               ng-disabled="submitted"
+                               placeholder="Palavra-passe" required name="password"/>
+                    </div>
+                    <p class="form-error" ng-if="signinForm.password.$error.required && signinForm.$submitted">
+                        Introduza a sua palavra-passe
+                    </p>
+                </div>
+                <div class="text-right">
+                    <button type="submit" class="button button-balanced-900 ink">Login</button>
+                </div>
+            </form>
+            <div class="text-left">
+                <button ui-sref="app.forgot" class="button button-flat ink">Recuperar Palavra-Passe</button>
+            </div>
+    </ion-content>
+</ion-view>
