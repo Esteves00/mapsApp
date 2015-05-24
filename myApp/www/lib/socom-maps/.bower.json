@@ -13,20 +13,20 @@
   },
   "license": "MIT",
   "ignore": [
-    "./!(socom-maps.js)",
     "node_modules",
     "bower_components",
     "minimal_example"
   ],
   "homepage": "https://github.com/oliveira0011/socom-maps",
-  "version": "0.0.16",
-  "_release": "0.0.16",
+  "version": "0.0.17",
+  "_release": "0.0.17",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.16",
-    "commit": "70f93439dfb2370eec9c1d6f8adc2b4f0bc37c90"
+    "tag": "v0.0.17",
+    "commit": "bd7a9dc442e47ae4ea75681b4f5e043b5e2bafac"
   },
   "_source": "git://github.com/oliveira0011/socom-maps.git",
-  "_target": "~0.0.8",
-  "_originalSource": "socom-maps"
+  "_target": "~0.0.17",
+  "_originalSource": "socom-maps",
+  "_direct": true
 }

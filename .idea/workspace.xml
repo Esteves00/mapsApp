@@ -1,0 +1,1479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c61536f5-d7ab-4886-9049-254a2a4be99a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/socom-maps/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/dist/zepto.min.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/requirejs/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/requirejs-text/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/CHANGELOG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/requirejs-text/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/MIT-LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/requirejs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/requirejs-text/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/socom-maps/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/ajax_deferred.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/fixtures/ajax_load_javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/fixtures/ajax_load_selector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/fixtures/ajax_load_selector_javascript.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/fixtures/ajax_load_simple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/examples/anim.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/functional/assets.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/assets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/script/bootstrap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/requirejs/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/requirejs-text/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/callbacks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/callbacks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/circle.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tests/runner/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/config/connect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/config/copy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/data.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/deferred.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/deferred.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/detect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/detect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/socom-maps/directions.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/socom-maps/enemies.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/event.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/event.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/vendor/evidence.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/evidence_runner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tests/unit/factory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/fx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/functional/fx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/fx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/fx_methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/functional/gesture.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/gesture.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/script/guard" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/ie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/fixtures/iframe_document.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/examples/iphone/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/examples/snow/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tests/runner/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/ios3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/ios3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/examples/iphone/iphone.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/config/jscs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/config/jshint.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/jslinting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/examples/load_jquery_on_ie.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tests/runner/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/mapsApp.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/config/mocha_phantomjs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/requirejs-text/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/dist/plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/src/js/plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tests/unit/plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/dist/plugin.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/requirejs/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/runner.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/selector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/server.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/config/shell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/socom-maps/socom-maps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/stack.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/stack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/jscs/tasks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/jshint/tasks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/lint/tasks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/version/tasks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/test.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/script/test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/requirejs-text/text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/touch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/functional/touch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/touch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/examples/touch_events.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/functional/touchcancel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/config/uglify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tests/unit/uuid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/config/version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/tasks/config/watch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/zepto.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/dist/zepto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/src/zepto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/test/fixtures/zepto.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/www/lib/plugin/lib/zeptojs/dist/zepto.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-aria/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-aria/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-aria/angular-aria.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-aria/angular-aria.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-aria/angular-aria.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-aria/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-aria/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-aria/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/dist/angular-leaflet-directive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/dist/angular-leaflet-directive.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/dist/angular-leaflet-directive_dev_mapped.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/dist/angular-leaflet-directive_dev_mapped.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/generate-examples.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/aliases.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/bower.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/bump.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/changelog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/clean.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/concat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/concurrent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/connect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/coveralls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/jshint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/karma.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/ngAnnotate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/open.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/pkg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/protractor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/shell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/uglify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/utils/banner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/utils/getAvailPort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet-directive/grunt/watch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/dist/angular-leaflet-directive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/dist/angular-leaflet-directive.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/dist/angular-leaflet-directive_dev_mapped.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/dist/angular-leaflet-directive_dev_mapped.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/generate-examples.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/aliases.yaml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/bower.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/bump.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/changelog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/clean.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/concat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/concurrent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/connect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/coveralls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/jshint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/karma.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/ngAnnotate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/open.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/pkg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/protractor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/shell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/uglify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/utils/banner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-leaflet/grunt/watch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/angular-material.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/angular-material.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/angular-material.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/angular-material.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/copy.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/copy2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/facebook.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/hangout.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/mail.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/message.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/print.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/share-arrow.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/twitter.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/upload.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/chips/demoBasicUsage/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/chips/demoContactChips/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/gridList/demoBasicUsage/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/gridList/demoDynamicTiles/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/gridList/demoResponsiveUsage/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/icon/demoLoadSvgIconsFromUrl/img/icons/addShoppingCart.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/icon/demoLoadSvgIconsFromUrl/img/icons/android.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/icon/demoLoadSvgIconsFromUrl/img/icons/cake.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/icon/demoSvgIconSets/assets/cake.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/icon/demoSvgIconSets/assets/core-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/icon/demoSvgIconSets/assets/social-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/icon/demoSvgIconsFromURL/img/icons/addShoppingCart.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/icon/demoSvgIconsFromURL/img/icons/android.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/icon/demoSvgIconsFromURL/img/icons/cake.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/icon/demoUsingTemplateCache/assets/android.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/icon/demoUsingTemplateCache/assets/cake.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/icon/demoUsingTemplateCache/assets/core-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/input/demoIcons/icons/ic_email_24px.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/input/demoIcons/icons/ic_person_24px.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/input/demoIcons/icons/ic_phone_24px.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/input/demoIcons/icons/ic_place_24px.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/input/demoIcons/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/list/demoListControls/img/100-0.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/list/demoListControls/img/100-1.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/list/demoListControls/img/100-2.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/tabs/demoDynamicHeight/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/tabs/demoDynamicTabs/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/tabs/demoStaticTabs/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/toolbar/demoBasicUsage/img/icons/favorite.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/toolbar/demoBasicUsage/img/icons/menu.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/demos/toolbar/demoBasicUsage/img/icons/more_vert.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/autocomplete/autocomplete-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/autocomplete/autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/autocomplete/autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/backdrop/backdrop-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/backdrop/backdrop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/backdrop/backdrop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/bottomSheet/bottomSheet-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/bottomSheet/bottomSheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/bottomSheet/bottomSheet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/button/button-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/button/button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/button/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/card/card-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/card/card.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/card/card.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/checkbox/checkbox-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/checkbox/checkbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/checkbox/checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/chips/chips-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/chips/chips.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/chips/chips.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/content/content-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/content/content.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/content/content.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/core/core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/core/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/core/default-theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/dialog/dialog-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/dialog/dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/dialog/dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/divider/divider-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/divider/divider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/divider/divider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/gridList/gridList-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/gridList/gridList.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/gridList/gridList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/icon/icon-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/icon/icon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/icon/icon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/input/input-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/input/input.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/input/input.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/list/list-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/list/list.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/list/list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/menu/menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/menu/menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/progressCircular/progressCircular-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/progressCircular/progressCircular.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/progressCircular/progressCircular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/progressLinear/progressLinear-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/progressLinear/progressLinear.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/progressLinear/progressLinear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/radioButton/radioButton-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/radioButton/radioButton.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/radioButton/radioButton.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/select/select-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/select/select.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/select/select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/sidenav/sidenav-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/sidenav/sidenav.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/sidenav/sidenav.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/slider/slider-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/slider/slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/slider/slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/sticky/sticky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/sticky/sticky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/subheader/subheader-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/subheader/subheader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/subheader/subheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/swipe/swipe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/switch/switch-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/switch/switch.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/switch/switch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/tabs/tabs-arrow.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/tabs/tabs-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/tabs/tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/tabs/tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/textField/textField-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/textField/textField.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/textField/textField.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/toast/toast-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/toast/toast.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/toast/toast.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/toolbar/toolbar-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/toolbar/toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/toolbar/toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/tooltip/tooltip-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/tooltip/tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/tooltip/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/whiteframe/whiteframe.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/closure/whiteframe/whiteframe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/css/angular-material-layout.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/autocomplete/autocomplete-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/autocomplete/autocomplete-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/autocomplete/autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/autocomplete/autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/autocomplete/autocomplete.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/autocomplete/autocomplete.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/autocomplete/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/backdrop/backdrop-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/backdrop/backdrop-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/backdrop/backdrop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/backdrop/backdrop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/backdrop/backdrop.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/backdrop/backdrop.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/backdrop/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/bottomSheet/bottomSheet-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/bottomSheet/bottomSheet-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/bottomSheet/bottomSheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/bottomSheet/bottomSheet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/bottomSheet/bottomSheet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/bottomSheet/bottomSheet.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/bottomSheet/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/button/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/button/button-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/button/button-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/button/button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/button/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/button/button.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/button/button.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/card/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/card/card-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/card/card-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/card/card.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/card/card.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/card/card.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/card/card.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/checkbox/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/checkbox/checkbox-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/checkbox/checkbox-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/checkbox/checkbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/checkbox/checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/checkbox/checkbox.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/checkbox/checkbox.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/chips/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/chips/chips-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/chips/chips-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/chips/chips.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/chips/chips.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/chips/chips.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/chips/chips.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/content/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/content/content-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/content/content-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/content/content.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/content/content.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/content/content.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/content/content.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/core/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/core/core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/core/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/core/core.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/core/core.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/core/default-theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/dialog/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/dialog/dialog-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/dialog/dialog-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/dialog/dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/dialog/dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/dialog/dialog.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/dialog/dialog.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/divider/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/divider/divider-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/divider/divider-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/divider/divider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/divider/divider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/divider/divider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/divider/divider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/gridList/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/gridList/gridList.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/gridList/gridList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/gridList/gridList.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/gridList/gridList.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/icon/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/icon/icon-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/icon/icon-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/icon/icon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/icon/icon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/icon/icon.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/icon/icon.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/input/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/input/input-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/input/input-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/input/input.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/input/input.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/input/input.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/input/input.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/list/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/list/list-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/list/list-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/list/list.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/list/list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/list/list.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/list/list.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/menu/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/menu/menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/menu/menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/menu/menu.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/menu/menu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressCircular/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressCircular/progressCircular-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressCircular/progressCircular-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressCircular/progressCircular.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressCircular/progressCircular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressCircular/progressCircular.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressCircular/progressCircular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressLinear/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressLinear/progressLinear-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressLinear/progressLinear-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressLinear/progressLinear.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressLinear/progressLinear.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressLinear/progressLinear.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/progressLinear/progressLinear.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/radioButton/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/radioButton/radioButton-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/radioButton/radioButton-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/radioButton/radioButton.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/radioButton/radioButton.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/radioButton/radioButton.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/radioButton/radioButton.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/select/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/select/select-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/select/select-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/select/select.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/select/select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/select/select.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/select/select.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/sidenav/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/sidenav/sidenav-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/sidenav/sidenav-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/sidenav/sidenav.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/sidenav/sidenav.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/sidenav/sidenav.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/sidenav/sidenav.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/slider/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/slider/slider-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/slider/slider-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/slider/slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/slider/slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/slider/slider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/slider/slider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/sticky/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/sticky/sticky.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/sticky/sticky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/sticky/sticky.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/sticky/sticky.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/subheader/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/subheader/subheader-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/subheader/subheader-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/subheader/subheader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/subheader/subheader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/subheader/subheader.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/subheader/subheader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/swipe/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/swipe/swipe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/swipe/swipe.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/switch/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/switch/switch-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/switch/switch-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/switch/switch.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/switch/switch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/switch/switch.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/switch/switch.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tabs/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tabs/tabs-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tabs/tabs-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tabs/tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tabs/tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tabs/tabs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tabs/tabs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/textField/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/textField/textField-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/textField/textField-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/textField/textField.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/textField/textField.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/textField/textField.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/textField/textField.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toast/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toast/toast-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toast/toast-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toast/toast.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toast/toast.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toast/toast.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toast/toast.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toolbar/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toolbar/toolbar-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toolbar/toolbar-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toolbar/toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toolbar/toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toolbar/toolbar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/toolbar/toolbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tooltip/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tooltip/tooltip-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tooltip/tooltip-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tooltip/tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tooltip/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tooltip/tooltip.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/tooltip/tooltip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/whiteframe/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/whiteframe/whiteframe.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/whiteframe/whiteframe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/whiteframe/whiteframe.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/modules/js/whiteframe/whiteframe.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-material/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-messages/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-messages/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-messages/angular-messages.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-messages/angular-messages.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-messages/angular-messages.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-messages/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-messages/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-messages/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/dist/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/grunt/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/grunt/bs-commonjs-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/grunt/bs-glyphicons-data-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/grunt/bs-lessdoc-parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/grunt/bs-raw-files-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/grunt/configBridge.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/grunt/sauce_browsers.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/.jscsrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/affix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/js/transition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/.csscomb.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/.csslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/badges.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/breadcrumbs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/button-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/carousel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/close.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/code.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/component-animations.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/dropdowns.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/glyphicons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/input-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/jumbotron.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/labels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/list-group.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/media.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/background-variant.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/border-radius.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/center-block.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/clearfix.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/gradients.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/grid-framework.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/hide-text.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/image.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/labels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/list-group.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/nav-divider.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/nav-vertical-align.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/opacity.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/panels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/progress-bar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/reset-filter.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/resize.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/responsive-visibility.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/size.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/tab-focus.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/table-row.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/text-emphasis.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/text-overflow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/mixins/vendor-prefixes.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/modals.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/navs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/normalize.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/pager.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/panels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/popovers.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/print.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/progress-bars.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/responsive-embed.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/responsive-utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/tables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/theme.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/thumbnails.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/type.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/less/wells.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/bootstrap/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/.bowerrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/.jscsrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/Gruntfile.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/hammer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/hammer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/hammer.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/hammerjs/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/dist/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/dist/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/dist/jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/ajax/jsonp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/ajax/load.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/ajax/parseJSON.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/ajax/parseXML.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/ajax/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/ajax/var/nonce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/ajax/var/rquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/ajax/xhr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/attributes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/attributes/attr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/attributes/classes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/attributes/prop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/attributes/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/attributes/val.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/callbacks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/core/access.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/core/init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/core/parseHTML.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/core/ready.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/core/var/rsingleTag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/css.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/css/addGetHookIf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/css/curCSS.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/css/defaultDisplay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/css/hiddenVisibleSelectors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/css/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/css/swap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/css/var/cssExpand.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/css/var/getStyles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/css/var/isHidden.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/css/var/rmargin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/css/var/rnumnonpx.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/data/Data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/data/accepts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/data/var/data_priv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/data/var/data_user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/deferred.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/deprecated.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/dimensions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/effects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/effects/Tween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/effects/animatedSelector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/event.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/event/ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/event/alias.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/event/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/exports/amd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/exports/global.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/intro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/manipulation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/manipulation/_evalUrl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/manipulation/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/manipulation/var/rcheckableType.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/offset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/outro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/queue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/queue/delay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/selector-native.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/selector-sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/selector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/serialize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/sizzle/dist/sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/sizzle/dist/sizzle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/sizzle/dist/sizzle.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/traversing.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/traversing/findFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/traversing/var/rneedsContext.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/var/arr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/var/class2type.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/var/concat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/var/hasOwn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/var/indexOf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/var/pnum.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/var/push.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/var/rnotwhite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/var/slice.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/var/strundefined.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/var/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/var/toString.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/www/lib/jquery/src/wrap.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/myApp/www/lib/angular/angular.min.js.gzip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/fonts/ionicons.eot" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/fonts/ionicons.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/fonts/ionicons.ttf" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/fonts/ionicons.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/fonts/ionicons.woff" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/fonts/ionicons.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/images/layers-2x.png" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/images/layers-2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/images/layers.png" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/images/layers.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/images/marker-icon-2x.png" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/images/marker-icon-2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/images/marker-icon.png" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/images/marker-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/images/marker-shadow.png" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/images/marker-shadow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular/.bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/angular/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-animate/.bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-animate/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/.bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/.bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/.bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/.bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/socom-maps/.bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/socom-maps/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/CHANGELOG.md" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/CHANGELOG.md" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/Jakefile.js" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/Jakefile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/LICENSE" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/LICENSE" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/PLUGIN-GUIDE.md" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/PLUGIN-GUIDE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular/README.md" afterPath="$PROJECT_DIR$/myApp/www/lib/angular/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-animate/README.md" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-animate/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/README.md" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/README.md" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/README.md" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/README.md" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_action-sheet.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_action-sheet.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_animations.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_animations.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_backdrop.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_backdrop.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_badge.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_badge.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_bar.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_bar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_button-bar.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_button-bar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_button.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_button.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_checkbox.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_checkbox.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_form.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_form.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_grid.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_items.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_items.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_list.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_loaders.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_loaders.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_loading.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_loading.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_menu.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_menu.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_mixins.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_modal.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_modal.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_platform.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_platform.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_popover.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_popover.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_popup.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_popup.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_progress.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_progress.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_radio.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_radio.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_range.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_range.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_refresher.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_refresher.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_scaffolding.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_scaffolding.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_select.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_select.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_slide-box.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_slide-box.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_spinner.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_spinner.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_split-pane.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_split-pane.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_tabs.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_tabs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_toggle.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_toggle.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_transitions.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_transitions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_type.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_type.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_util.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_util.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_variables.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-animate/angular-animate.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-animate/angular-animate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-animate/angular-animate.min.js.map" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-animate/angular-animate.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-animate/angular-animate.min.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-animate/angular-animate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular/angular-csp.css" afterPath="$PROJECT_DIR$/myApp/www/lib/angular/angular-csp.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/angular-sanitize.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/angular-sanitize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/angular-sanitize.min.js.map" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/angular-sanitize.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/angular-sanitize.min.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/angular-sanitize.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/api/angular-ui-router.d.ts" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/api/angular-ui-router.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/release/angular-ui-router.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/release/angular-ui-router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/release/angular-ui-router.min.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/release/angular-ui-router.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular/angular.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/myApp/www/lib/angular/angular.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular/angular.min.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/bower.json" afterPath="$PROJECT_DIR$/myApp/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular/bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/angular/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-animate/bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-animate/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/socom-maps/bower.json" afterPath="$PROJECT_DIR$/myApp/www/lib/socom-maps/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/common.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/component.json" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/config.xml" afterPath="$PROJECT_DIR$/myApp/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular/index.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/js/ionic-angular.js" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/js/ionic-angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/js/ionic-angular.min.js" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/js/ionic-angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/js/ionic.bundle.js" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/js/ionic.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/js/ionic.bundle.min.js" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/js/ionic.bundle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/css/ionic.css" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/css/ionic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/js/ionic.js" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/js/ionic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/css/ionic.min.css" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/css/ionic.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/js/ionic.min.js" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/js/ionic.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/ionic.scss" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/scss/ionic.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/ionic/fonts/ionicons.svg" afterPath="$PROJECT_DIR$/myApp/www/lib/ionic/fonts/ionicons.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/leaflet-src.js" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/leaflet-src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/leaflet.css" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/leaflet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/leaflet.js" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/dist/leaflet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/package.json" afterPath="$PROJECT_DIR$/myApp/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular/package.json" afterPath="$PROJECT_DIR$/myApp/www/lib/angular/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-animate/package.json" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-animate/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/package.json" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-sanitize/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/leaflet/package.json" afterPath="$PROJECT_DIR$/myApp/www/lib/leaflet/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/resolve.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/resolve.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/socom-maps.compass/socom-compass.js" afterPath="$PROJECT_DIR$/myApp/www/lib/socom-maps.compass/socom-compass.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/state.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/state.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/stateDirectives.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/stateDirectives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/stateFilters.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/stateFilters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/templateFactory.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/templateFactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/urlMatcherFactory.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/urlMatcherFactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/urlRouter.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/urlRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/view.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/viewDirective.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/viewDirective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/viewScroll.js" afterPath="$PROJECT_DIR$/myApp/www/lib/angular-ui-router/src/viewScroll.js" />
+    </list>
+    <ignored path="mapsApp.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="mapsApp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myApp/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.66021127">
+              <caret line="25" column="78" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/myApp/platforms/ios/cordova/console.log" />
+        <option value="$PROJECT_DIR$/myApp/config.xml" />
+        <option value="$PROJECT_DIR$/myApp/www/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="981" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapsApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapsApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapsApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapsApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapsApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapsApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapsApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapsApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapsApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.lastSelected" value="Errors" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="FullScreen" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+  </component>
+  <component name="RunManager" selected="PhoneGap/Cordova.Maps">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhoneGap" factoryName="PhoneGap/Cordova">
+      <option name="myExecutable" />
+      <option name="myWorkDir" />
+      <option name="myCommand" />
+      <option name="myPassParent" value="true" />
+      <option name="myPlatform" />
+      <option name="myExtraArgs" />
+      <option name="hasTarget" value="false" />
+      <option name="target" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Maps" type="PhoneGap" factoryName="PhoneGap/Cordova">
+      <option name="myExecutable" value="/usr/local/bin/ionic" />
+      <option name="myWorkDir" value="$PROJECT_DIR$/myApp" />
+      <option name="myCommand" value="run" />
+      <option name="myPassParent" value="true" />
+      <option name="myPlatform" value="ios" />
+      <option name="myExtraArgs" value="" />
+      <option name="hasTarget" value="false" />
+      <option name="target" value="" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PhoneGap/Cordova.Maps" />
+    </list>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c61536f5-d7ab-4886-9049-254a2a4be99a" name="Default" comment="" />
+      <created>1432463031136</created>
+      <option name="number" value="Default" />
+      <updated>1432463031136</updated>
+      <workItem from="1432463032444" duration="58000" />
+      <workItem from="1432463103962" duration="5820000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5878000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="981" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/myApp/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66021127">
+          <caret line="25" column="78" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
