@@ -8,7 +8,7 @@
     "ionic": "1.0.0",
     "leaflet": "0.7.3",
     "socom-maps.view-mode": "0.0.3",
-    "socom-maps.compass": "0.0.3",
+    "socom-maps.compass": "0.0.4",
     "leaflet.markercluster": "0.4.0"
   },
   "license": "MIT",
@@ -18,15 +18,14 @@
     "minimal_example"
   ],
   "homepage": "https://github.com/oliveira0011/socom-maps",
-  "version": "0.0.21",
-  "_release": "0.0.21",
+  "version": "0.0.22",
+  "_release": "0.0.22",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.21",
-    "commit": "94e1e6c1172ae6d74d236ba89f0f29807e55ce03"
+    "tag": "v0.0.22",
+    "commit": "25e98e0f59582b0ce7e93c6afbfed32ef7a4268a"
   },
   "_source": "git://github.com/oliveira0011/socom-maps.git",
   "_target": "~0.0.21",
-  "_originalSource": "socom-maps",
-  "_direct": true
+  "_originalSource": "socom-maps"
 }
