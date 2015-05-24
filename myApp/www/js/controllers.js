@@ -40,7 +40,7 @@ angular.module('starter.controllers', ['starter.services'])
     .controller('ProfileCtrl', function ($scope, $ionicLoading, $stateParams, $timeout, $firebaseArray, $ionicPopup, Map, Squad, Operator, Specialization) {
 
     })
-    .controller('MapCtrl', function ($scope, $ionicLoading, $stateParams, $timeout, $firebaseArray, $ionicPopup, Map, Squad, Operator, Hostile, Specialization) {
+    .controller('MapCtrl', function ($scope, $ionicLoading, $stateParams, $timeout, $firebaseArray, $ionicPopup, Map, Squad, Operator, Specialization) {
         var ref = new Firebase("https://torrid-heat-5220.firebaseio.com/teams/");
         $scope.mapCreated = function (map) {
             $scope.map = map;
@@ -73,12 +73,10 @@ angular.module('starter.controllers', ['starter.services'])
                     alert('Error!');
                 });
             });
-            $scope.$on('enemyDetected', function (event, hostile) {
-                console.log(hostile);
-                $scope.map.addHostile(new Hostile(hostile.latitude, hostile.longitude, hostile.enemiesNumber, hostile.direction));
-                alert("Hostile Number:" + hostile.enemiesNumber + "\nDirection: " + hostile.direction);
+            $scope.$on('enemyDetected', function (event, enemy) {
+                console.log(enemy);
+                alert("Enemies Number:" + enemy.enemiesNumber + "\nDirection: " + enemy.direction);
             });
-
             ref.on('child_added', function (child) {
                 var mk = child.val();
                 $scope.map.addOperator(1, new Operator(mk.id, mk.nickname, mk.position.latitude, mk.position.longitude, Specialization.get(mk.specialization)));

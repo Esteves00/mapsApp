@@ -1323,7 +1323,6 @@ L.MarkerCluster = L.Marker.extend({
 		this._recursively(previousBounds, -1, zoomLevel - 1,
 			function (c) {
 				//Remove markers at every level
-
 				for (i = c._markers.length - 1; i >= 0; i--) {
 					m = c._markers[i];
 					if (!exceptBounds || !exceptBounds.contains(m._latlng)) {
@@ -1336,7 +1335,6 @@ L.MarkerCluster = L.Marker.extend({
 			},
 			function (c) {
 				//Remove child clusters at just the bottom level
-
 				for (i = c._childClusters.length - 1; i >= 0; i--) {
 					m = c._childClusters[i];
 					if (!exceptBounds || !exceptBounds.contains(m._latlng)) {
@@ -1717,6 +1715,7 @@ L.MarkerCluster.include({
 			center.y += 10; //Otherwise circles look wrong
 			positions = this._generatePointsCircle(childMarkers.length, center);
 		}
+
 		this._animationSpiderfy(childMarkers, positions);
 	},
 
