@@ -1,21 +1,20 @@
-
 var scripts = document.getElementsByTagName("script");
-var templatePath = scripts[scripts.length-1].src.replace('socom-maps.js', 'enemies_modal.html');
-var squadsPath = scripts[scripts.length-1].src.replace('socom-maps.js', 'img/squads/');
-var specializationPath = scripts[scripts.length-1].src.replace('socom-maps.js', 'img/specializations/');
+var templatePath = scripts[scripts.length - 1].src.replace('socom-maps.js', 'enemies_modal.html');
+var squadsPath = scripts[scripts.length - 1].src.replace('socom-maps.js', 'img/squads/');
+var specializationPath = scripts[scripts.length - 1].src.replace('socom-maps.js', 'img/specializations/');
 angular.module('socom-maps', [])
     .factory('Direction', function () {
 
         var direction = {
             NORTH_EAST: "ne",
-            NORTH : "n",
-            NORTH_WEST : "nw",
-            EAST : "e",
-            CAMPER : "c",
-            WEST : "w",
+            NORTH: "n",
+            NORTH_WEST: "nw",
+            EAST: "e",
+            CAMPER: "c",
+            WEST: "w",
             SOUTH_EAST: "se",
-            SOUTH : "s",
-            SOUTH_WEST : "sw"
+            SOUTH: "s",
+            SOUTH_WEST: "sw"
         };
 
         direction.get = function (key) {
@@ -51,7 +50,7 @@ angular.module('socom-maps', [])
             this.latitude = latitude;
             this.longitude = longitude;
             this.enemiesNumber = enemiesNumber;
-            this.direction = Direction.get(direction);
+            this.direction = direction;
         }
 
         return Hostile;
@@ -217,13 +216,14 @@ angular.module('socom-maps', [])
             this.operators = [];
             if (!operators instanceof Array) {
                 console.log('Trying to add an non Array object!!');
-            } else if(operators){
+            } else if (operators) {
                 for (var i = 0; i < operators.length; i++) {
                     var obj = operators[i];
                     this.addOperator(obj);
                 }
             }
         }
+
         Squad.prototype.addOperator = function (operator) {
             if (!operator instanceof Operator) {
                 console.log('Trying to add an non Operator object!!');
@@ -242,7 +242,7 @@ angular.module('socom-maps', [])
         };
         return Squad;
     })
-    .directive('map', function ($ionicLoading, $ionicPopup, $ionicModal, Map, $rootScope) {
+    .directive('map', function ($ionicLoading, $ionicPopup, $ionicModal, Map, $rootScope, Direction) {
         return {
             restrict: 'E',
             scope: {
@@ -288,7 +288,7 @@ angular.module('socom-maps', [])
                                                         childCount > 9 && childCount < 14 ? 'squad' :
                                                             childCount >= 14 ? 'platoon' : undefined);
                                         return new L.DivIcon({
-                                            html: "<div class='pin' style='background: #219710 url(\"" + srcicon + ".png\") no-repeat bottom'></div><div class='pulse'></div>",
+                                            html: "<div class='pin' style='background: #219710 url(\"" + srcicon + ".png\") no-repeat bottom'></div>",
                                             iconSize: new L.Point(0, 0)
                                         });
                                     },
@@ -312,12 +312,14 @@ angular.module('socom-maps', [])
                 var addHostileMarker = function (hostile) {
                     var coordinates = new L.LatLng(hostile.latitude, hostile.longitude);
                     if (insidePlayableArea($scope.map, coordinates)) {
+                        var icon = 'pin-hostile-' + hostile.direction;
+                        console.log(hostile);
                         var marker = new L.Marker(coordinates,
                             {
 
                                 //icon: new L.Icon({iconUrl: 'img/skull_red.png'}),
                                 icon: new L.DivIcon({
-                                    html: "<div class='pin pin-red' nickname='" + hostile.enemiesNumber + "'></div>",
+                                    html: "<div class='pin pin-hostile " + icon + "' nickname='" + hostile.enemiesNumber + "'></div><div class='pulse'></div>",
                                     iconSize: new L.Point(0, 0)
                                 }),
                                 title: 'Inimigo nas redondezas'
@@ -404,57 +406,57 @@ angular.module('socom-maps', [])
                                     btns: [[
                                         {
                                             label: 'NE',
-                                            value: 'NE',
+                                            value: Direction.NORTH_EAST,
                                             className: 'btn-direction-ne',
                                             hideLabel: true
                                         },
                                         {
                                             label: 'N',
-                                            value: 'N',
+                                            value: Direction.NORTH,
                                             className: 'btn-direction-n',
                                             hideLabel: true
                                         },
                                         {
                                             label: 'NW',
-                                            value: 'NW',
+                                            value: Direction.NORTH_WEST,
                                             className: 'btn-direction-nw',
                                             hideLabel: true
                                         }
                                     ], [
                                         {
                                             label: 'E',
-                                            value: 'E',
+                                            value: Direction.EAST,
                                             className: 'btn-direction-e',
                                             hideLabel: true
                                         },
                                         {
                                             label: 'C',
-                                            value: 'C',
+                                            value: Direction.CAMPER,
                                             className: 'btn-direction-c',
                                             hideLabel: true
                                         },
                                         {
                                             label: 'W',
-                                            value: 'W',
+                                            value: Direction.WEST,
                                             className: 'btn-direction-w',
                                             hideLabel: true
                                         },
                                     ], [
                                         {
                                             label: 'SE',
-                                            value: 'SE',
+                                            value: Direction.SOUTH_EAST,
                                             className: 'btn-direction-se',
                                             hideLabel: true
                                         },
                                         {
                                             label: 'S',
-                                            value: 'S',
+                                            value: Direction.SOUTH,
                                             className: 'btn-direction-s',
                                             hideLabel: true
                                         },
                                         {
                                             label: 'SW',
-                                            value: 'SW',
+                                            value: Direction.SOUTH_WEST,
                                             className: 'btn-direction-sw',
                                             hideLabel: true
                                         },
@@ -498,7 +500,7 @@ angular.module('socom-maps', [])
                             {
                                 title: "Encontra-se aqui",
                                 icon: new L.DivIcon({
-                                    html: "<div class='pin pin-orange' style='background: #FF5D00 url(\"img/xpto.png\") no-repeat bottom !important' nickname='YOUR_NAME'></div><div class='pulse'></div>",
+                                    html: "<div class='pin pin-orange' style='background: #FF5D00 url(\"img/xpto.png\") no-repeat bottom !important' nickname='YOUR_NAME'></div>",
                                     iconSize: new L.Point(0, 0)
                                 })
                             }

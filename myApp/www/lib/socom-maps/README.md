@@ -15,6 +15,18 @@ In order to use this directive the easiest way is to use bower.
 Another way is obtaining the source code of the directive and put it on one of the projects folder.
 There is also available a running example on the folder minimal_example on which there are represented a game area and a squad of three players, including the user using the app. 
 
+In order to see the functionality of the directive on a mobile device, the following commands are needed.
+
+###Platforms:
+	
+	ionic add platform ios
+	ionic add platform ios
+###Plugins (all mandatory)
+	
+	ionic plugin add net.yoik.cordova.plugins.screenorientation
+	ionic plugin add cordova-plugin-whitelist
+	ionic plugin add cordova-plugin-geolocation
+
 ###After obtaining the source code
 After obtaining the source code, all the libraries on wich the directive depends on will be available.
 The next step is to indicate the needed files on the .html pages.

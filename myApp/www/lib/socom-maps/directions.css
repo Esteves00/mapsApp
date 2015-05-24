@@ -18,7 +18,7 @@
 .enemies .btn-direction-ne:after, .enemies .btn-direction-n:after, .enemies .btn-direction-nw:after,
 .enemies .btn-direction-e:after,.enemies .btn-direction-c:after,.enemies .btn-direction-w:after,
 .enemies .btn-direction-se:after,.enemies .btn-direction-s:after,.enemies .btn-direction-sw:after{
-    background: url("../../img/arrow2.png") no-repeat center;
+    background: url("img/arrow.png") no-repeat center;
     background-size: 80px;
 }
 .enemies .btn-direction-ne:active:after, .enemies .btn-direction-n:active:after, .enemies .btn-direction-nw:active:after,
@@ -28,16 +28,16 @@
 .enemies .btn-direction-se:active:after,.enemies .btn-direction-s:active:after,.enemies .btn-direction-sw:active:after,
 .enemies .btn-direction-se:hover:after,.enemies .btn-direction-s:hover:after,.enemies .btn-direction-sw:hover:after,
 {
-    background: url("../../img/arrow2_hover.png") no-repeat center;
+    background: url("img/arrow_hover.png") no-repeat center;
     background-size: 80px;
 }
 
 .enemies .btn-direction-c:after {
-    background: url("../../img/shield.png") no-repeat center;
+    background: url("img/shield.png") no-repeat center;
     background-size: 80px;
 }
 .enemies .btn-direction-c:active:after {
-    background: url("../../img/shield_hover.png") no-repeat center;
+    background: url("img/shield_hover.png") no-repeat center;
     background-size: 80px;
 }
 
