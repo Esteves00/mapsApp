@@ -112,9 +112,10 @@ map {
 .pin-hostile {
     font-size: 35px;
     height: 85px;
-    margin-left: -35px;
+    background-color: #F00;
     margin-top: -105px;
 }
+
 .pin-hostile:before {
     border-color: transparent #f00 #f00 transparent;
     display: block;
@@ -124,41 +125,52 @@ map {
     margin: 11px 0;
     border-color: transparent #f00 #f00 transparent;
 }
-.pin-hostile-c {
+
+.pin-hostile-direction{
+    background: url("img/hostile/direction_n.png") no-repeat top transparent;
+    background-size: 60px;
+    width: 70px;
+    height: 60px;
+    margin-top: -97px;
+}
+.pin-hostile-direction-c {
     background: url("img/shield.png") no-repeat top #F00;
     background-size: 60px;
 }
-.pin-hostile-ne {
-    background: url("img/hostile/direction_ne.png") no-repeat top #F00;
-    background-size: 60px;
+.pin-hostile-direction-ne {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
 }
-.pin-hostile-n {
-    background: url("img/hostile/direction_n.png") no-repeat top #F00;
-    background-size: 60px;
+.pin-hostile-direction-nw {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
 }
-.pin-hostile-nw {
-    background: url("img/hostile/direction_nw.png") no-repeat top #F00;
-    background-size: 60px;
+.pin-hostile-direction-e {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
 }
-.pin-hostile-e {
-    background: url("img/hostile/direction_e.png") no-repeat top #F00;
-    background-size: 60px;
+.pin-hostile-direction-w {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
 }
-.pin-hostile-w {
-    background: url("img/hostile/direction_w.png") no-repeat top #F00;
-    background-size: 60px;
+.pin-hostile-direction-se {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
 }
-.pin-hostile-se {
-    background: url("img/hostile/direction_se.png") no-repeat top #F00;
-    background-size: 60px;
+.pin-hostile-direction-s {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
 }
-.pin-hostile-s {
-    background: url("img/hostile/direction_s.png") no-repeat top #F00;
-    background-size: 60px;
-}
-.pin-hostile-sw {
-    background: url("img/hostile/direction_sw.png") no-repeat top #F00;
-    background-size: 60px;
+.pin-hostile-direction-sw {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
 }
 
 .custom-popup .leaflet-popup {

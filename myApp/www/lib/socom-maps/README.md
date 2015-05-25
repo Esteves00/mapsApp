@@ -1,6 +1,6 @@
 # SOCOM MAPS
 
-Directive that allows the manipullation of a google maps and leaflet based map.
+Directive that allows the manipulation of a google maps and leaflet based map.
 This entity is intended to be used on a AirSoft project.
 
 ![logo]
@@ -19,13 +19,14 @@ In order to see the functionality of the directive on a mobile device, the follo
 
 ###Platforms:
 	
-	ionic add platform ios
+	ionic add platform android
 	ionic add platform ios
 ###Plugins (all mandatory)
 	
 	ionic plugin add net.yoik.cordova.plugins.screenorientation
 	ionic plugin add cordova-plugin-whitelist
 	ionic plugin add cordova-plugin-geolocation
+	ionic plugin add cordova-plugin-device-orientation
 
 ###After obtaining the source code
 After obtaining the source code, all the libraries on wich the directive depends on will be available.
