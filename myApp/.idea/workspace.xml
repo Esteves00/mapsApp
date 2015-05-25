@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e31448ba-ca88-49fe-984b-6831061f4d8a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/socom-maps/map.png" afterPath="$PROJECT_DIR$/www/lib/socom-maps/map.png" />
+      <change type="DELETED" beforePath="C:\Users\Ivo\Documents\JSProjects\mapsApp\myApp\www\lib\socom-maps\img\hostile\direction_e.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ivo\Documents\JSProjects\mapsApp\myApp\www\lib\socom-maps\img\hostile\direction_n.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ivo\Documents\JSProjects\mapsApp\myApp\www\lib\socom-maps\img\hostile\direction_ne.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ivo\Documents\JSProjects\mapsApp\myApp\www\lib\socom-maps\img\hostile\direction_nw.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ivo\Documents\JSProjects\mapsApp\myApp\www\lib\socom-maps\img\hostile\direction_s.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ivo\Documents\JSProjects\mapsApp\myApp\www\lib\socom-maps\img\hostile\direction_se.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ivo\Documents\JSProjects\mapsApp\myApp\www\lib\socom-maps\img\hostile\direction_sw.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Ivo\Documents\JSProjects\mapsApp\myApp\www\lib\socom-maps\img\hostile\direction_w.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/socom-maps/.bower.json" afterPath="$PROJECT_DIR$/www/lib/socom-maps/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/socom-maps/README.md" afterPath="$PROJECT_DIR$/www/lib/socom-maps/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/socom-maps/bower.json" afterPath="$PROJECT_DIR$/www/lib/socom-maps/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/socom-maps/socom-maps.css" afterPath="$PROJECT_DIR$/www/lib/socom-maps/socom-maps.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/socom-maps/socom-maps.js" afterPath="$PROJECT_DIR$/www/lib/socom-maps/socom-maps.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -90,30 +94,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socom-maps.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="socom-maps.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/lib/socom-maps/socom-maps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.362069">
-              <caret line="346" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="663" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.43453512">
+              <caret line="375" column="79" selection-start-line="0" selection-start-column="0" selection-end-line="663" selection-end-column="0" />
               <folding>
                 <element signature="e#422#1078#0" expanded="false" />
                 <element signature="e#1122#1434#0" expanded="false" />
                 <element signature="e#1481#1865#0" expanded="false" />
                 <element signature="e#5705#6102#0" expanded="false" />
                 <element signature="e#6924#7725#0" expanded="false" />
-                <marker date="1432590531295" expanded="true" signature="9805:9828" placeholder="..." />
-                <marker date="1432590531295" expanded="true" signature="9968:10028" placeholder="..." />
-                <marker date="1432590531295" expanded="true" signature="10138:10161" placeholder="..." />
-                <marker date="1432590531295" expanded="true" signature="26907:26976" placeholder="..." />
+                <marker date="1432591236987" expanded="true" signature="9805:9828" placeholder="..." />
+                <marker date="1432591236987" expanded="true" signature="9968:10028" placeholder="..." />
+                <marker date="1432591236987" expanded="true" signature="10138:10161" placeholder="..." />
+                <marker date="1432591236987" expanded="true" signature="26915:26984" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="socom-maps.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="socom-maps.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/lib/socom-maps/socom-maps.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75555557">
+            <state vertical-scroll-proportion="0.0">
               <caret line="157" column="33" selection-start-line="157" selection-start-column="33" selection-end-line="157" selection-end-column="33" />
               <folding />
             </state>
@@ -148,8 +152,8 @@
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/plugins/ios.json" />
         <option value="$PROJECT_DIR$/www/lib/socom-maps.compass/socom-compass.js" />
-        <option value="$PROJECT_DIR$/www/lib/socom-maps/socom-maps.js" />
         <option value="$PROJECT_DIR$/www/lib/socom-maps/socom-maps.css" />
+        <option value="$PROJECT_DIR$/www/lib/socom-maps/socom-maps.js" />
       </list>
     </option>
   </component>
@@ -776,16 +780,16 @@
       <workItem from="1432496100506" duration="743000" />
       <workItem from="1432496878082" duration="640000" />
       <workItem from="1432499168342" duration="1210000" />
-      <workItem from="1432581226399" duration="8662000" />
+      <workItem from="1432581226399" duration="9332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18791000" />
+    <option name="totallyTimeSpent" value="19461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -797,7 +801,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3365801" sideWeight="0.49791667" order="0" side_tool="false" content_ui="tabs" x="0" y="364" width="1920" height="312" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33742005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33742005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -885,10 +889,10 @@
             <element signature="e#1481#1865#0" expanded="false" />
             <element signature="e#5705#6102#0" expanded="false" />
             <element signature="e#6924#7725#0" expanded="false" />
-            <marker date="1432590531295" expanded="true" signature="9805:9828" placeholder="..." />
-            <marker date="1432590531295" expanded="true" signature="9968:10028" placeholder="..." />
-            <marker date="1432590531295" expanded="true" signature="10138:10161" placeholder="..." />
-            <marker date="1432590531295" expanded="true" signature="26907:26976" placeholder="..." />
+            <marker date="1432591236987" expanded="true" signature="9805:9828" placeholder="..." />
+            <marker date="1432591236987" expanded="true" signature="9968:10028" placeholder="..." />
+            <marker date="1432591236987" expanded="true" signature="10138:10161" placeholder="..." />
+            <marker date="1432591236987" expanded="true" signature="26915:26984" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1117,29 +1121,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/socom-maps/socom-maps.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="157" column="33" selection-start-line="157" selection-start-column="33" selection-end-line="157" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/lib/socom-maps/socom-maps.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.362069">
-          <caret line="346" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="663" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.43453512">
+          <caret line="375" column="79" selection-start-line="0" selection-start-column="0" selection-end-line="663" selection-end-column="0" />
           <folding>
             <element signature="e#422#1078#0" expanded="false" />
             <element signature="e#1122#1434#0" expanded="false" />
             <element signature="e#1481#1865#0" expanded="false" />
             <element signature="e#5705#6102#0" expanded="false" />
             <element signature="e#6924#7725#0" expanded="false" />
-            <marker date="1432590531295" expanded="true" signature="9805:9828" placeholder="..." />
-            <marker date="1432590531295" expanded="true" signature="9968:10028" placeholder="..." />
-            <marker date="1432590531295" expanded="true" signature="10138:10161" placeholder="..." />
-            <marker date="1432590531295" expanded="true" signature="26907:26976" placeholder="..." />
+            <marker date="1432591236987" expanded="true" signature="9805:9828" placeholder="..." />
+            <marker date="1432591236987" expanded="true" signature="9968:10028" placeholder="..." />
+            <marker date="1432591236987" expanded="true" signature="10138:10161" placeholder="..." />
+            <marker date="1432591236987" expanded="true" signature="26915:26984" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/socom-maps/socom-maps.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75555557">
-          <caret line="157" column="33" selection-start-line="157" selection-start-column="33" selection-end-line="157" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>

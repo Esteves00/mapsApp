@@ -373,7 +373,7 @@ angular.module('socom-maps', [])
                             var options = {
                                 frequency: 3000
                             };
-                            var hostileDiv = document.getElementById(id);
+                            var hostileDiv = document.getElementById(hostile.id);
                             var onSuccess = function (heading) {
                                 if (hostile.direction !== Direction.CAMPER) {
                                     var magneticHeading = 360 - hostile.direction.rotation - heading.magneticHeading;
