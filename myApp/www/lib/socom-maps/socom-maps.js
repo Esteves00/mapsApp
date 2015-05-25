@@ -371,7 +371,7 @@ angular.module('socom-maps', [])
                         hostileMarkers[hostile.id] = marker;
                         if (navigator.compass) {
                             var options = {
-                                frequency: 3000
+                                frequency: 1000
                             };
                             var hostileDiv = document.getElementById(hostile.id);
                             var onSuccess = function (heading) {
