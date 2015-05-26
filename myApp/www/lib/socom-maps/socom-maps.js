@@ -613,7 +613,7 @@ angular.module('socom-maps', [])
                     compass.addTo($scope.map.map);
                     //console.log('map ready');
                     $scope.onCreate({map: $scope.map});
-                    $scope.map.map.on('click', function (e) {
+                    $scope.map.map.on('contextmenu', function (e) {
                             var latLng = new L.LatLng(e.latlng.lat, e.latlng.lng);
                             if (insidePlayableArea($scope.map, latLng)) {
                                 //scr=scr[scr.length-1]

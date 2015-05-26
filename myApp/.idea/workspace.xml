@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e31448ba-ca88-49fe-984b-6831061f4d8a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/socom-maps/.bower.json" afterPath="$PROJECT_DIR$/www/lib/socom-maps/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/socom-maps/README.md" afterPath="$PROJECT_DIR$/www/lib/socom-maps/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/socom-maps/socom-maps.css" afterPath="$PROJECT_DIR$/www/lib/socom-maps/socom-maps.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/socom-maps/socom-maps.js" afterPath="$PROJECT_DIR$/www/lib/socom-maps/socom-maps.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -91,18 +88,18 @@
       <file leaf-file-name="socom-maps.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/lib/socom-maps/socom-maps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1722973">
-              <caret line="373" column="44" selection-start-line="373" selection-start-column="44" selection-end-line="373" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.48464164">
+              <caret line="615" column="50" selection-start-line="615" selection-start-column="50" selection-end-line="615" selection-end-column="50" />
               <folding>
                 <element signature="e#422#1078#0" expanded="false" />
                 <element signature="e#1122#1434#0" expanded="false" />
                 <element signature="e#1481#1865#0" expanded="false" />
                 <element signature="e#5705#6102#0" expanded="false" />
                 <element signature="e#6924#7725#0" expanded="false" />
-                <marker date="1432592593582" expanded="true" signature="9805:9828" placeholder="..." />
-                <marker date="1432592593582" expanded="true" signature="9968:10028" placeholder="..." />
-                <marker date="1432592593582" expanded="true" signature="10138:10161" placeholder="..." />
-                <marker date="1432592593582" expanded="true" signature="26915:26984" placeholder="..." />
+                <marker date="1432672271075" expanded="true" signature="9805:9828" placeholder="..." />
+                <marker date="1432672271075" expanded="true" signature="9968:10028" placeholder="..." />
+                <marker date="1432672271075" expanded="true" signature="10138:10161" placeholder="..." />
+                <marker date="1432672271075" expanded="true" signature="26915:26984" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -198,6 +195,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -386,9 +386,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -775,15 +772,16 @@
       <workItem from="1432496878082" duration="640000" />
       <workItem from="1432499168342" duration="1210000" />
       <workItem from="1432581226399" duration="9439000" />
-      <workItem from="1432592185161" duration="471000" />
+      <workItem from="1432592185161" duration="704000" />
+      <workItem from="1432670979606" duration="1187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20039000" />
+    <option name="totallyTimeSpent" value="21459000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -793,8 +791,8 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33549783" sideWeight="0.49791667" order="0" side_tool="false" content_ui="tabs" x="0" y="364" width="1920" height="312" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33549783" sideWeight="0.49791667" order="0" side_tool="false" content_ui="tabs" x="0" y="364" width="1920" height="312" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33742005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -826,6 +824,40 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/lib/socom-maps/socom-maps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#422#1078#0" expanded="false" />
+            <element signature="e#1122#1434#0" expanded="false" />
+            <element signature="e#1481#1865#0" expanded="false" />
+            <element signature="e#5705#6102#0" expanded="false" />
+            <element signature="e#6924#7725#0" expanded="false" />
+            <marker date="1432672271075" expanded="true" signature="9805:9828" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="9968:10028" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="10138:10161" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="26915:26984" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/socom-maps/socom-maps.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="157" column="33" selection-start-line="157" selection-start-column="33" selection-end-line="157" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/socom-maps.compass/socom-compass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -884,10 +916,10 @@
             <element signature="e#1481#1865#0" expanded="false" />
             <element signature="e#5705#6102#0" expanded="false" />
             <element signature="e#6924#7725#0" expanded="false" />
-            <marker date="1432592593582" expanded="true" signature="9805:9828" placeholder="..." />
-            <marker date="1432592593582" expanded="true" signature="9968:10028" placeholder="..." />
-            <marker date="1432592593582" expanded="true" signature="10138:10161" placeholder="..." />
-            <marker date="1432592593582" expanded="true" signature="26915:26984" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="9805:9828" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="9968:10028" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="10138:10161" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="26915:26984" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -966,10 +998,10 @@
             <element signature="e#1481#1865#0" expanded="false" />
             <element signature="e#5705#6102#0" expanded="false" />
             <element signature="e#6924#7725#0" expanded="false" />
-            <marker date="1432592593582" expanded="true" signature="9805:9828" placeholder="..." />
-            <marker date="1432592593582" expanded="true" signature="9968:10028" placeholder="..." />
-            <marker date="1432592593582" expanded="true" signature="10138:10161" placeholder="..." />
-            <marker date="1432592593582" expanded="true" signature="26915:26984" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="9805:9828" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="9968:10028" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="10138:10161" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="26915:26984" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1213,18 +1245,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/lib/socom-maps/socom-maps.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1722973">
-          <caret line="373" column="44" selection-start-line="373" selection-start-column="44" selection-end-line="373" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.48464164">
+          <caret line="615" column="50" selection-start-line="615" selection-start-column="50" selection-end-line="615" selection-end-column="50" />
           <folding>
             <element signature="e#422#1078#0" expanded="false" />
             <element signature="e#1122#1434#0" expanded="false" />
             <element signature="e#1481#1865#0" expanded="false" />
             <element signature="e#5705#6102#0" expanded="false" />
             <element signature="e#6924#7725#0" expanded="false" />
-            <marker date="1432592593582" expanded="true" signature="9805:9828" placeholder="..." />
-            <marker date="1432592593582" expanded="true" signature="9968:10028" placeholder="..." />
-            <marker date="1432592593582" expanded="true" signature="10138:10161" placeholder="..." />
-            <marker date="1432592593582" expanded="true" signature="26915:26984" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="9805:9828" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="9968:10028" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="10138:10161" placeholder="..." />
+            <marker date="1432672271075" expanded="true" signature="26915:26984" placeholder="..." />
           </folding>
         </state>
       </provider>
