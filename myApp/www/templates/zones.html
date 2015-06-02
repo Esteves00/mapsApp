@@ -1,0 +1,25 @@
+<ion-view view-title="Map" align-title="left" class="login-view">
+    <ion-content scroll="false" data-tap-disabled="true">
+        <div class="row">
+            <input placeholder="Latitude" hightlight-color="energized" type="text"/>
+            <input placeholder="Longitude" hightlight-color="energized" type="text"/>
+        </div>
+        <div class="row" style="height: 90%">
+            <div class="col-75" style="height: 100%">
+                <map class='custom-popup' on-create="mapCreated(map)"></map>
+
+            </div>
+            <div class="col-25">
+                <select>
+                    <option>Zone Types</option>
+                    <textarea></textarea>
+                    <button>Cancel</button>
+                    <button>Save</button>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">Joaquim casadas</div>
+        </div>
+    </ion-content>
+</ion-view>
