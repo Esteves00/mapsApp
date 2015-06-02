@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', "firebase", 'starter.controllers', 'socom-maps'])
+angular.module('starter', ['ionic', "firebase", 'starter.controllers', 'socom-maps', 'hudModule'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {

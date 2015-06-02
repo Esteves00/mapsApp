@@ -75,7 +75,7 @@ angular.module('socom-maps', [])
 
         Map.prototype.addHostile = function (hostile) {
             if (!hostile instanceof Hostile) {
-                //console.log('Trying to add an non Hostile object!!');
+                console.log('Trying to add an non Hostile object!!');
             } else {
                 this.hostiles[hostile.id] = (hostile);
                 if (this.hostileCallBack) {
@@ -85,7 +85,7 @@ angular.module('socom-maps', [])
         };
         Map.prototype.removeHostile = function (hostile) {
             if (!hostile instanceof Hostile) {
-                //console.log('Trying to remove an non Hostile object!!');
+                console.log('Trying to remove an non Hostile object!!');
             } else {
                 this.hostiles.splice(hostile);
                 if (this.hostileRemovedCallback) {
@@ -100,14 +100,14 @@ angular.module('socom-maps', [])
 
         Map.prototype.addSquad = function (squad) {
             if (!squad instanceof Squad) {
-                //console.log('Trying to add an non Squad object!!');
+                console.log('Trying to add an non Squad object!!');
             } else {
                 this.squads[squad.id] = (squad);
             }
         };
         Map.prototype.removeSquad = function (squad) {
             if (!squad instanceof Squad) {
-                //console.log('Trying to remove an non Squad object!!');
+                console.log('Trying to remove an non Squad object!!');
             }
             this.squads.splice(squad);
         };
@@ -116,7 +116,7 @@ angular.module('socom-maps', [])
         };
         Map.prototype.setPlayableArea = function (playableareapoints) {
             if (!(playableareapoints instanceof Array)) {
-                //console.log('Trying to add an non Array object!!');
+                console.log('Trying to add an non Array object!!');
             } else {
                 //console.log(this.playablearea);
                 var success = this.playablearea.setPoints(playableareapoints);
@@ -127,7 +127,7 @@ angular.module('socom-maps', [])
         };
         Map.prototype.addOperator = function (squadId, operator) {
             if (!operator instanceof Operator) {
-                //console.log('Trying to add an non Operator object!!');
+                console.log('Trying to add an non Operator object!!');
             } else {
                 this.squads[squadId].addOperator(operator);
                 if (this.operatorCallback) {
@@ -137,7 +137,7 @@ angular.module('socom-maps', [])
         };
         Map.prototype.removeOperator = function (squadId, operator) {
             if (!operator instanceof Operator) {
-                //console.log('Trying to remove an non Operator object!!');
+                console.log('Trying to remove an non Operator object!!');
             } else {
                 delete this.squads[squadId].removeOperator(operator);
                 if (this.operatorRemovedCallback) {
@@ -178,7 +178,7 @@ angular.module('socom-maps', [])
             for (var i = 0; i < playableareapoints.length; i++) {
                 var point = playableareapoints[i];
                 if (!(point instanceof L.LatLng)) {
-                    //console.log('Trying to add an non L.LatLng object!!');
+                    console.log('Trying to add an non L.LatLng object!!');
                     return false;
                 } else {
                     pointsAux[i] = point;
@@ -224,11 +224,11 @@ angular.module('socom-maps', [])
         /**
          * Constructor, with class name
          */
-        function Squad(id, operators, image) {
+        function Squad(id, operators) {
             this.id = id;
             this.operators = {};
             if (!operators instanceof Array) {
-                //console.log('Trying to add an non Array object!!');
+                console.log('Trying to add an non Array object!!');
             } else if (operators) {
                 for (var i = 0; i < operators.length; i++) {
                     var obj = operators[i];
@@ -239,14 +239,14 @@ angular.module('socom-maps', [])
 
         Squad.prototype.addOperator = function (operator) {
             if (!operator instanceof Operator) {
-                //console.log('Trying to add an non Operator object!!');
+                console.log('Trying to add an non Operator object!!');
             } else {
                 this.operators[operator.username] = operator;
             }
         };
         Squad.prototype.removeOperator = function (operator) {
             if (!operator instanceof Operator) {
-                //console.log('Trying to remove an non Operator object!!');
+                console.log('Trying to remove an non Operator object!!');
             }
             delete this.operators[operator.username];
         };
@@ -284,63 +284,73 @@ angular.module('socom-maps', [])
                 var addOperatorMarker = function (operator, squadId) {
                     var coordinates = new L.LatLng(operator.latitude, operator.longitude);
                     if (insidePlayableArea($scope.map, coordinates)) {
-                        var marker = new L.Marker(coordinates,
-                            {
-                                id: operator.username,
-                                //icon: new L.Icon({iconUrl: 'img/skull_red.png'}),
-                                icon: new L.DivIcon({
-                                    html: "<div class='pin' style='background: #219710 url(\"" + specializationPath + operator.specialization + "\") no-repeat center;background-position-y: 15px;' nickname='" + operator.nickname + "'></div>",
-                                    iconSize: new L.Point(0, 0)
-                                }),
-                                title: 'Inimigo nas redondezas'
-                            }
-                        );
-                        //marker.addTo($scope.map.map);
-                        addMarkerEvents($scope.map.map, marker, operator.nickname, 'Element info');
-                        if (!markerGroups[squadId]) {
-                            markerGroups[squadId] = new L.MarkerClusterGroup(
+                        if(operatorsMarkers[operator.username] !== undefined){
+                            operatorsMarkers[operator.username].setLatLng(coordinates);
+                            $rootScope.$broadcast('operatorUpdated', operator);
+                        }else {
+                            var marker = new L.Marker(coordinates,
                                 {
-                                    iconCreateFunction: function (cluster) {
-                                        //console.log($scope.map.getSquad(squadId).operatorsCount());
-                                        var childCount = $scope.map.getSquad(squadId).operatorsCount();
-                                        var srcicon = squadsPath +
-                                            (childCount == 1 || childCount == 2 ? 'fire_maneuver' :
-                                                childCount > 2 && childCount < 6 ? 'fireteam' :
-                                                    childCount > 5 && childCount < 11 ? 'patrol' :
-                                                        childCount > 9 && childCount < 14 ? 'squad' :
-                                                            childCount >= 14 ? 'platoon' : undefined);
-                                        return new L.DivIcon({
-                                            html: "<div class='pin' style='background: #219710 url(\"" + srcicon + ".png\") no-repeat bottom'></div>",
-                                            iconSize: new L.Point(0, 0)
-                                        });
-                                    },
-                                    maxClusterRadius: 100
+                                    id: operator.username,
+                                    //icon: new L.Icon({iconUrl: 'img/skull_red.png'}),
+                                    icon: new L.DivIcon({
+                                        html: "<div class='pin' style='background: #219710 url(\"" + specializationPath + operator.specialization + "\") no-repeat center;background-position-y: 15px;' nickname='" + operator.nickname + "'></div>",
+                                        iconSize: new L.Point(0, 0)
+                                    }),
+                                    title: 'Inimigo nas redondezas'
+                                }
+                            );
+                            //marker.addTo($scope.map.map);
+                            addMarkerEvents($scope.map.map, marker, operator.nickname, 'Element info');
+                            if (!markerGroups[squadId]) {
+                                markerGroups[squadId] = new L.MarkerClusterGroup(
+                                    {
+                                        iconCreateFunction: function (cluster) {
+                                            //console.log($scope.map.getSquad(squadId).operatorsCount());
+                                            var childCount = $scope.map.getSquad(squadId).operatorsCount();
+                                            var srcicon = squadsPath +
+                                                (childCount == 1 || childCount == 2 ? 'fire_maneuver' :
+                                                    childCount > 2 && childCount < 6 ? 'fireteam' :
+                                                        childCount > 5 && childCount < 11 ? 'patrol' :
+                                                            childCount > 9 && childCount < 14 ? 'squad' :
+                                                                childCount >= 14 ? 'platoon' : undefined);
+                                            return new L.DivIcon({
+                                                html: "<div class='pin' style='background: #219710 url(\"" + srcicon + ".png\") no-repeat bottom'></div>",
+                                                iconSize: new L.Point(0, 0)
+                                            });
+                                        },
+                                        maxClusterRadius: 100
+                                    });
+                                //$scope.map.map.addLayer(markerGroups[squadId]);
+                                $scope.layers[squadId] = new L.LayerGroup().addTo($scope.map.map);
+                                $scope.control.addOverlay($scope.layers[squadId], "Team");
+
+                                $scope.viewMode = L.control.viewmode({
+                                    operator: $scope.myLocation ? $scope.myLocation.getLatLng() : undefined,
+                                    squad: markerGroups[squadId]
                                 });
-                            //$scope.map.map.addLayer(markerGroups[squadId]);
-                            $scope.layers[squadId] = new L.LayerGroup().addTo($scope.map.map);
-                            $scope.control.addOverlay($scope.layers[squadId], "Team");
-
-                            $scope.viewMode = L.control.viewmode({
-                                operator: $scope.myLocation ? $scope.myLocation.getLatLng() : undefined,
-                                squad: markerGroups[squadId]
-                            });
-                            $scope.viewMode.addTo($scope.map.map);
-
+                                $scope.viewMode.addTo($scope.map.map);
+                                $scope.map.map.addControl(L.control.zoom({position:'bottomleft'}));
+                            }
+                            markerGroups[squadId].addLayer(marker);
+                            markerGroups[squadId].addTo($scope.layers[squadId]);
+                            operatorsMarkers[operator.username] = marker;
+                            $rootScope.$broadcast('operatorAdded', operator);
                         }
-                        markerGroups[squadId].addLayer(marker);
-                        markerGroups[squadId].addTo($scope.layers[squadId]);
-                        operatorsMarkers[operator.username] = marker;
                     }
                 };
                 var removeOperatorMarker = function (squadId, operator) {
                     markerGroups[squadId].removeLayer(operatorsMarkers[operator.username]);
                     $scope.map.map.removeLayer(operatorsMarkers[operator.username]);
+                    var operatorRemoved = operatorsMarkers[operator.username];
                     delete operatorsMarkers[operator.username];
+                    $rootScope.$broadcast('operatorRemoved', operatorRemoved);
                 };
                 var removeHostileMarker = function (hostile) {
                     //console.log(hostileMarkers);
                     $scope.map.map.removeLayer(hostileMarkers[hostile.id]);
+                    var hostileRemoved = operatorsMarkers[hostile.id];
                     delete hostileMarkers[hostile.id];
+                    $rootScope.$broadcast('hostileRemoved', hostileRemoved);
                     //console.log(hostileMarkers);
                     //$scope.map.removeOperator(1, $scope.map.getOperator(1, 6));
                 };
@@ -350,25 +360,30 @@ angular.module('socom-maps', [])
                     if (insidePlayableArea($scope.map, coordinates)) {
                         var icon = 'pin-hostile-direction-' + hostile.direction.identifier;
                         //console.log(hostile);
-                        var marker = new L.Marker(coordinates,
-                            {
+                        if(hostileMarkers[hostile.id] !== undefined){
+                            hostileMarkers[hostile.id].setLatLng(coordinates);
+                            $rootScope.$broadcast('hostileUpdated', hostile);
+                        }else {
+                            var marker = new L.Marker(coordinates,
+                                {
 
-                                //icon: new L.Icon({iconUrl: 'img/skull_red.png'}),
-                                icon: new L.DivIcon({
-                                    html: "<div class='pin pin-hostile' nickname='" + hostile.enemiesNumber + "'>" +
-                                    "<div id='" + hostile.id + "' class='pin-hostile-direction  " + icon + "'></div>" +
-                                    "</div>" +
-                                    "<div class='pulse'></div>",
-                                    //html: "<div id='" + $scope.map.hostiles.length + "' class='pin pin-hostile " + icon + "' nickname='" + hostile.enemiesNumber + "'></div><div class='pulse'></div>",
-                                    iconSize: new L.Point(0, 0)
-                                }),
-                                title: 'Inimigo nas redondezas'
-                            }
-                        );
-                        marker.options.id = hostile.id;
-                        marker.addTo($scope.map.map);
-                        addMarkerEvents($scope.map.map, marker, hostile.enemiesNumber, 'Element info');
-                        hostileMarkers[hostile.id] = marker;
+                                    //icon: new L.Icon({iconUrl: 'img/skull_red.png'}),
+                                    icon: new L.DivIcon({
+                                        html: "<div class='pin pin-hostile' nickname='" + hostile.enemiesNumber + "'>" +
+                                        "<div id='" + hostile.id + "' class='pin-hostile-direction  " + icon + "'></div>" +
+                                        "</div>" +
+                                        "<div class='pulse'></div>",
+                                        //html: "<div id='" + $scope.map.hostiles.length + "' class='pin pin-hostile " + icon + "' nickname='" + hostile.enemiesNumber + "'></div><div class='pulse'></div>",
+                                        iconSize: new L.Point(0, 0)
+                                    }),
+                                    title: 'Inimigo nas redondezas'
+                                }
+                            );
+                            marker.options.id = hostile.id;
+                            marker.addTo($scope.map.map);
+                            addMarkerEvents($scope.map.map, marker, hostile.enemiesNumber, 'Element info');
+                            hostileMarkers[hostile.id] = marker;
+                        }
                         if (navigator.compass) {
                             var options = {
                                 frequency: 1000
@@ -394,6 +409,7 @@ angular.module('socom-maps', [])
                                 navigator.compass.clearWatch(watchID);
                             }
                         }, 10000);
+                        $rootScope.$broadcast('hostileAdded', hostile);
                     }
                 };
                 var centerOnCurrentLocation = function () {
@@ -574,6 +590,7 @@ angular.module('socom-maps', [])
                         ).addTo($scope.map.map);
                         addMarkerEvents($scope.map.map, $scope.myLocation, "Encontra-se aqui1", true);
                     }
+                    $rootScope.$broadcast('userPositionUpdated', {latitude: pos.coords.latitude, longitude: pos.coords.longitude});
                     if ($scope.viewMode !== undefined) {
                         $scope.viewMode.setOperator($scope.myLocation.getLatLng());
                     }
@@ -584,7 +601,7 @@ angular.module('socom-maps', [])
                     var mapOptions = {
                         center: new L.LatLng(43.07493, -89.381388),
                         zoom: 15,
-                        zoomControl: true,
+                        zoomControl: false,
                         attributionControl: false,
                         maxZoom: 22,
                         minZoom: 11
