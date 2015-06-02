@@ -1,3 +1,4 @@
-.idea/
+.idea/*
+myApp/.idea/*
 myApp.7z
 events.txt
