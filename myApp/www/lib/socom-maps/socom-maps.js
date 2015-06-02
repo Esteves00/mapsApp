@@ -265,9 +265,11 @@ angular.module('socom-maps', [])
         return {
             restrict: 'E',
             scope: {
+                mode: '@',
                 onCreate: '&'
             },
             link: function ($scope, $element) {
+                //<editor-fold desc="On Field">
                 var markerGroups = {};
                 var modal;
                 var operatorsMarkers = {};
@@ -284,10 +286,10 @@ angular.module('socom-maps', [])
                 var addOperatorMarker = function (operator, squadId) {
                     var coordinates = new L.LatLng(operator.latitude, operator.longitude);
                     if (insidePlayableArea($scope.map, coordinates)) {
-                        if(operatorsMarkers[operator.username] !== undefined){
+                        if (operatorsMarkers[operator.username] !== undefined) {
                             operatorsMarkers[operator.username].setLatLng(coordinates);
                             $rootScope.$broadcast('operatorUpdated', operator);
-                        }else {
+                        } else {
                             var marker = new L.Marker(coordinates,
                                 {
                                     id: operator.username,
@@ -329,7 +331,7 @@ angular.module('socom-maps', [])
                                     squad: markerGroups[squadId]
                                 });
                                 $scope.viewMode.addTo($scope.map.map);
-                                $scope.map.map.addControl(L.control.zoom({position:'bottomleft'}));
+                                $scope.map.map.addControl(L.control.zoom({position: 'bottomleft'}));
                             }
                             markerGroups[squadId].addLayer(marker);
                             markerGroups[squadId].addTo($scope.layers[squadId]);
@@ -354,16 +356,15 @@ angular.module('socom-maps', [])
                     //console.log(hostileMarkers);
                     //$scope.map.removeOperator(1, $scope.map.getOperator(1, 6));
                 };
-
                 var addHostileMarker = function (hostile) {
                     var coordinates = new L.LatLng(hostile.latitude, hostile.longitude);
                     if (insidePlayableArea($scope.map, coordinates)) {
                         var icon = 'pin-hostile-direction-' + hostile.direction.identifier;
                         //console.log(hostile);
-                        if(hostileMarkers[hostile.id] !== undefined){
+                        if (hostileMarkers[hostile.id] !== undefined) {
                             hostileMarkers[hostile.id].setLatLng(coordinates);
                             $rootScope.$broadcast('hostileUpdated', hostile);
-                        }else {
+                        } else {
                             var marker = new L.Marker(coordinates,
                                 {
 
@@ -422,11 +423,17 @@ angular.module('socom-maps', [])
                     });
                     var successCurrentPosition = function (pos) {
                         $scope.map.map.panTo(new L.LatLng(pos.coords.latitude, pos.coords.longitude));
-                        updateLocation(pos);
+                        if ($scope.mode !== "DRAW") {
+                            updateLocation(pos);
+                        }
                         $ionicLoading.hide();
                     };
                     var successWatchPosition = function (pos) {
-                        updateLocation(pos);
+                        if ($scope.mode === "DRAW") {
+                            $scope.map.map.panTo(new L.LatLng(pos.coords.latitude, pos.coords.longitude));
+                        } else {
+                            updateLocation(pos);
+                        }
                     };
                     var error = function (error) {
                         $ionicPopup.show({
@@ -477,7 +484,6 @@ angular.module('socom-maps', [])
                     }
                     return inside;
                 };
-
                 var onEnemiesPopupSelected = function (value) {
                     $scope.enemiesNumber = value;
                     modal.hide();
@@ -590,11 +596,16 @@ angular.module('socom-maps', [])
                         ).addTo($scope.map.map);
                         addMarkerEvents($scope.map.map, $scope.myLocation, "Encontra-se aqui1", true);
                     }
-                    $rootScope.$broadcast('userPositionUpdated', {latitude: pos.coords.latitude, longitude: pos.coords.longitude});
+                    $rootScope.$broadcast('userPositionUpdated', {
+                        latitude: pos.coords.latitude,
+                        longitude: pos.coords.longitude
+                    });
                     if ($scope.viewMode !== undefined) {
                         $scope.viewMode.setOperator($scope.myLocation.getLatLng());
                     }
                 };
+                //</editor-fold>
+
 
                 function initialize() {
                     //console.log('instantiating maps controller');
@@ -607,7 +618,6 @@ angular.module('socom-maps', [])
                         minZoom: 11
                     };
                     $scope.map = new Map(new L.Map($element[0], mapOptions), drawLines, addOperatorMarker, removeOperatorMarker, addHostileMarker, removeHostileMarker);
-                    //console.log('creating map layers');
                     var googleLayerSattelite = new L.Google('SATELLITE');
                     var googleLayerRoadMap = new L.Google('ROADMAP');
                     var googleLayerHybrid = new L.Google('HYBRID');
@@ -625,40 +635,103 @@ angular.module('socom-maps', [])
                         maxZoom: 22,
                         minZoom: 11
                     });
-                    //console.log('adding compass control');
-                    var compass = L.control.compass();
-                    compass.addTo($scope.map.map);
-                    //console.log('map ready');
-                    $scope.onCreate({map: $scope.map});
-                    $scope.map.map.on('contextmenu', function (e) {
-                            var latLng = new L.LatLng(e.latlng.lat, e.latlng.lng);
-                            if (insidePlayableArea($scope.map, latLng)) {
-                                //scr=scr[scr.length-1]
-                                createPopup([{
-                                        templateUrl: templatePath, options: {
-                                            title: 'Sighted Enemies Number',
-                                            btns: [[
-                                                {label: '1', value: '1'},
-                                                {label: '2', value: '2'},
-                                            ], [
-                                                {label: '2-3', value: '2-3'},
-                                                {label: '3-5', value: '3-5'},
-                                            ], [
-                                                {label: '5-7', value: '5-7'},
-                                                {label: '+7', value: '+7'},
-                                            ], [
-                                                {label: 'Cancel', className: 'btn-direction-cancel'}
-                                            ]],
-                                            onclick: onEnemiesPopupSelected,
-                                            templateClass: 'enemies'
-                                        }
-                                    }],
-                                    function (_modal) {
-                                        (modal = _modal).show();
-                                    }, latLng);
+                    if ($scope.mode === 'OPERATOR') {
+                        var compass = L.control.compass();
+                        compass.addTo($scope.map.map);
+                        //console.log('map ready');
+                        $scope.onCreate({map: $scope.map});
+                        $scope.map.map.on('contextmenu', function (e) {
+                                var latLng = new L.LatLng(e.latlng.lat, e.latlng.lng);
+                                if (insidePlayableArea($scope.map, latLng)) {
+                                    //scr=scr[scr.length-1]
+                                    createPopup([{
+                                            templateUrl: templatePath, options: {
+                                                title: 'Sighted Enemies Number',
+                                                btns: [[
+                                                    {label: '1', value: '1'},
+                                                    {label: '2', value: '2'},
+                                                ], [
+                                                    {label: '2-3', value: '2-3'},
+                                                    {label: '3-5', value: '3-5'},
+                                                ], [
+                                                    {label: '5-7', value: '5-7'},
+                                                    {label: '+7', value: '+7'},
+                                                ], [
+                                                    {label: 'Cancel', className: 'btn-direction-cancel'}
+                                                ]],
+                                                onclick: onEnemiesPopupSelected,
+                                                templateClass: 'enemies'
+                                            }
+                                        }],
+                                        function (_modal) {
+                                            (modal = _modal).show();
+                                        }, latLng);
+                                }
                             }
-                        }
-                    );
+                        );
+                    } else if ($scope.mode === 'DRAW') {
+                        var drawnItems = new L.FeatureGroup();
+                        $scope.map.map.addLayer(drawnItems);
+                        var generateControl = function (zoneDefined) {
+                            if (zoneDefined) {
+                                return new L.Control.Draw({
+                                    draw: false,
+                                    edit: {
+                                        featureGroup: drawnItems
+                                    }
+                                });
+                            } else {
+                                return new L.Control.Draw({
+                                    draw: {
+                                        polygon: {
+                                            shapeOptions: {
+                                                color: 'orange'
+                                            },
+                                            allowIntersection: false,
+                                            drawError: {
+                                                color: 'red',
+                                                timeout: 1000
+                                            },
+                                            showArea: true,
+                                            metric: true
+                                        },
+                                        polyline: false,
+                                        circle: false,
+                                        marker: false,
+                                        rectangle: {
+                                            shapeOptions: {
+                                                color: 'green'
+                                            }
+                                        }
+                                    },
+                                    edit: false
+                                });
+                            }
+                        };
+                        var currentControl = generateControl(false);
+                        $scope.map.map.addControl(currentControl);
+                        $scope.map.map.on('draw:created', function (e) {
+                            drawnItems.addLayer(e.layer);
+                            $scope.map.map.removeControl(currentControl);
+                            currentControl = generateControl(true);
+                            $scope.map.map.addControl(currentControl);
+                        });
+
+                        $scope.map.map.on('draw:deletestop', function (e) {
+                            console.log(e);
+                            drawnItems.removeLayer(e.target);
+                            var elementsNum = 0;
+                            drawnItems.eachLayer(function (layer) {
+                                elementsNum++;
+                            });
+                            if (elementsNum == 0) {
+                                $scope.map.map.removeControl(currentControl);
+                                currentControl = generateControl(false);
+                                $scope.map.map.addControl(currentControl);
+                            }
+                        });
+
+                    }
                     //console.log('centering on position');
                     centerOnCurrentLocation();
                 }
