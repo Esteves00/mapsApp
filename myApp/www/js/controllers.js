@@ -109,6 +109,10 @@ angular.module('starter.controllers', ['starter.services'])
                 console.log(prevChild);
             });
         };
-    }
-)
-;
+    })
+    .controller('ZoneCtrl', function ($scope, $ionicLoading, $stateParams, $timeout, $firebaseArray, $ionicPopup, Map, Squad, Operator, Specialization, Hostile) {
+
+        $scope.mapCreated = function (map) {
+            $scope.map = map;
+        }
+    });

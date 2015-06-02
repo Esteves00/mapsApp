@@ -55,6 +55,15 @@ angular.module('starter', ['ionic', "firebase", 'starter.controllers', 'socom-ma
                     }
                 }
             })
+            .state('app.zones', {
+                url: '/zones',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/zones.html',
+                        controller: 'ZoneCtrl'
+                    }
+                }
+            })
         ;
 
         // if none of the above states are matched, use this as the fallback
