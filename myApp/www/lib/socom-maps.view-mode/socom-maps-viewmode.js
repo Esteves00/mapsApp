@@ -5,7 +5,7 @@
 (function () {
     L.Control.ViewMode = L.Control.extend({
         options: {
-            position: 'topleft',
+            position: 'bottomleft',
             //center:,
             //zoom :,
             operatorTitle: 'Center on operator',

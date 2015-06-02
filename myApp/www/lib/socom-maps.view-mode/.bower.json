@@ -13,14 +13,14 @@
     "bower_components"
   ],
   "homepage": "https://github.com/oliveira0011/socom-maps.view-mode",
-  "version": "0.0.3",
-  "_release": "0.0.3",
+  "version": "0.0.4",
+  "_release": "0.0.4",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.3",
-    "commit": "193244dca2a17ff4d58333c4d4bef2677742a6b4"
+    "tag": "v0.0.4",
+    "commit": "c987e2c2c5b72c0bf2bb5447251fae51937443a1"
   },
   "_source": "git://github.com/oliveira0011/socom-maps.view-mode.git",
-  "_target": "0.0.3",
+  "_target": "0.0.4",
   "_originalSource": "socom-maps.view-mode"
 }

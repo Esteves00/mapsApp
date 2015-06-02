@@ -40,7 +40,8 @@ angular.module('starter.controllers', ['starter.services'])
     .controller('ProfileCtrl', function ($scope, $ionicLoading, $stateParams, $timeout, $firebaseArray, $ionicPopup, Map, Squad, Operator, Specialization) {
 
     })
-    .controller('MapCtrl', function ($scope, $ionicLoading, $stateParams, $timeout, $firebaseArray, $ionicPopup, Map, Squad, Operator, Specialization, Hostile) {
+    .controller('MapCtrl', function ($scope, $ionicLoading, $stateParams, $timeout, $firebaseArray, $ionicPopup, Map, Squad, Operator, Specialization, Hostile, $ionicSideMenuDelegate) {
+        $ionicSideMenuDelegate.canDragContent(false);
         var ref = new Firebase("https://torrid-heat-5220.firebaseio.com/teams/");
         $scope.mapCreated = function (map) {
             $scope.map = map;
@@ -59,6 +60,9 @@ angular.module('starter.controllers', ['starter.services'])
                 ]
             );
             $scope.data = $firebaseArray(ref);
+            $scope.$on('hostileUpdated', function (event, operator) {
+              console.log(operator);
+            });
             $scope.$on('notificationCreated', function (event, marker) {
                 $scope.data.$add({
                     markerId: marker.markerId,

@@ -1,0 +1,14 @@
+Events broadcasted:
+
+<!-- represent the notifications -->
+hostileAdded -> Hostile Class,
+hostileRemoved -> Hostile Class,
+hostileUpdated -> Hostile Class,
+
+<!-- represent the operators of the team -->
+operatorAdded -> Operator Class,
+operatorRemoved -> Operator Class,
+hostileUpdated -> Operator Class,
+
+<!-- represent the user position -->
+userPositionUpdated -> {latitude: , longitude: }
