@@ -268,7 +268,8 @@ angular.module('socom-maps', [])
                 mode: '@',
                 onCreate: '&'
             },
-            link: function ($scope, $element) {
+            link: function ($scope, $element, $compile) {
+                $element.html(($scope.mode == 'OPERATOR' ? "<hud></hud>" : "") + "<div class='custom-popup' on-create='mapCreated(map)'></div>");
                 //<editor-fold desc="On Field">
                 var markerGroups = {};
                 var modal;
