@@ -268,8 +268,7 @@ angular.module('socom-maps', [])
                 mode: '@',
                 onCreate: '&'
             },
-            link: function ($scope, $element, $compile) {
-                $element.html(($scope.mode == 'OPERATOR' ? "<hud></hud>" : "") + "<div class='custom-popup' on-create='mapCreated(map)'></div>");
+            link: function ($scope, $element) {
                 //<editor-fold desc="On Field">
                 var markerGroups = {};
                 var modal;
@@ -351,7 +350,7 @@ angular.module('socom-maps', [])
                 var removeHostileMarker = function (hostile) {
                     //console.log(hostileMarkers);
                     $scope.map.map.removeLayer(hostileMarkers[hostile.id]);
-                    var hostileRemoved = operatorsMarkers[hostile.id];
+                    var hostileRemoved = hostileMarkers[hostile.id];
                     delete hostileMarkers[hostile.id];
                     $rootScope.$broadcast('hostileRemoved', hostileRemoved);
                     //console.log(hostileMarkers);
