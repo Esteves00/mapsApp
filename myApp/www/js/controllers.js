@@ -40,28 +40,36 @@ angular.module('starter.controllers', ['starter.services'])
     .controller('ProfileCtrl', function ($scope, $ionicLoading, $stateParams, $timeout, $firebaseArray, $ionicPopup, Map, Squad, Operator, Specialization) {
 
     })
-    .controller('MapCtrl', function ($scope, $ionicLoading, $stateParams, $timeout, $firebaseArray, $ionicPopup, Map, Squad, Operator, Specialization, Hostile, $ionicSideMenuDelegate) {
+    .controller('MapCtrl', function ($scope, $ionicLoading, $stateParams, $timeout, $firebaseArray, $ionicPopup, Map, Squad, Operator, Specialization, Hostile, $ionicSideMenuDelegate, CoordinatesConverter) {
         $ionicSideMenuDelegate.canDragContent(false);
         var ref = new Firebase("https://torrid-heat-5220.firebaseio.com/teams/");
         $scope.mapCreated = function (map) {
             $scope.map = map;
             $scope.map.addSquad(new Squad(1));
-            $scope.map.setPlayableArea(
-                [
-                    new L.LatLng(39.749603, -8.81188),
-                    new L.LatLng(39.747245, -8.809389),
-                    new L.LatLng(39.7350782, -8.8159208),
-                    new L.LatLng(39.7250685, -8.7888804),
-                    new L.LatLng(39.7042049, -8.7450639),
-                    new L.LatLng(39.7049312, -8.7117615),
-                    new L.LatLng(39.7470229, -8.6982563),
-                    new L.LatLng(39.763266, -8.7687178),
-                    new L.LatLng(39.749603, -8.81188)
-                ]
-            );
+
+
+            var requestResult = [
+                {lat_c: "N", lat_d: 39, lat_m: 44, lat_s: 58.57, lng_c: "W", lng_d: 8, lng_m: 48, lng_s: 42.76},
+                {lat_c: "N", lat_d: 39, lat_m: 44, lat_s: 50.08, lng_c: "W", lng_d: 8, lng_m: 48, lng_s: 33.8},
+                {lat_c: "N", lat_d: 39, lat_m: 44, lat_s: 6.28, lng_c: "W", lng_d: 8, lng_m: 48, lng_s: 57.31},
+                {lat_c: "N", lat_d: 39, lat_m: 43, lat_s: 30.24, lng_c: "W", lng_d: 8, lng_m: 47, lng_s: 19.96},
+                {lat_c: "N", lat_d: 39, lat_m: 42, lat_s: 15.13, lng_c: "W", lng_d: 8, lng_m: 44, lng_s: 42.23},
+                {lat_c: "N", lat_d: 39, lat_m: 42, lat_s: 17.7, lng_c: "W", lng_d: 8, lng_m: 42, lng_s: 42.34},
+                {lat_c: "N", lat_d: 39, lat_m: 44, lat_s: 49.28, lng_c: "W", lng_d: 8, lng_m: 41, lng_s: 53.72},
+                {lat_c: "N", lat_d: 39, lat_m: 45, lat_s: 47.75, lng_c: "W", lng_d: 8, lng_m: 46, lng_s: 7.38},
+                {lat_c: "N", lat_d: 39, lat_m: 44, lat_s: 58.57, lng_c: "W", lng_d: 8, lng_m: 48, lng_s: 42.47}
+            ];
+            var coordinates = []; //LatLng
+            var converter = new CoordinatesConverter();
+            angular.forEach(requestResult, function (coordinate) {
+                converter.latitude.setDMS(coordinate.lat_d, coordinate.lat_m, coordinate.lat_s, coordinate.lat_c);
+                converter.longitude.setDMS(coordinate.lng_d, coordinate.lng_m, coordinate.lng_s, coordinate.lng_c);
+                coordinates.push(new L.LatLng(converter.getLatitude(), converter.getLongitude()));
+            });
+            $scope.map.setPlayableArea(coordinates);
             $scope.data = $firebaseArray(ref);
             $scope.$on('hostileUpdated', function (event, operator) {
-              console.log(operator);
+                console.log(operator);
             });
             $scope.$on('notificationCreated', function (event, marker) {
                 $scope.data.$add({
