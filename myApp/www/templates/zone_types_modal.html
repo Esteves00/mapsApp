@@ -1,0 +1,25 @@
+<form class="modal" style="background-color: #eee" ng-controller="ZoneTypeCtrl">
+    <div class="list-item row">
+        <select class="col" name="selectedZoneType"
+                ng-model="masterZoneTypeSelected" ng-change="getMasterZoneType(masterZoneTypeSelected)"
+                ng-options="zoneType.name for zoneType in masterZones">
+            <option value=''>New Zone</option>
+        </select>
+        <button ng-disabled="!masterZoneTypeInEdition || !masterZoneTypeInEdition.id || masterZoneTypeInEdition.id < 0"
+                ng-click="deleteMasterZoneType()">X
+        </button>
+    </div>
+    <div class="list-item row">
+        <label class="col">Zone Name
+            <input class="col" min="0" type="text" ng-model="masterZoneTypeInEdition.name"/>
+        </label>
+    </div>
+    <div class="list-item text-right" style="margin-top:20px; margin-right: 20px">
+        <button class="button button-bar-stable" ng-click="cancelMasterZoneType()">Cancel</button>
+        <button class="button button-bar-balanced" ng-click="saveMasterZoneType()">Save</button>
+    </div>
+
+    <div class="list-item text-center">
+        <button class="button button-dark" ng-click="closeModal()" style="margin-top: 100px;">Close</button>
+    </div>
+</form>

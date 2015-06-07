@@ -56,19 +56,22 @@ angular.module('socom-maps', [])
 
         return Hostile;
     })
-    .factory('Map', function (PlayableArea, Squad, Operator, Hostile) {
+    .factory('Map', function (Zone, Squad, Operator, Hostile) {
         /**
          * Constructor, with class name
          */
-        function Map(map, playableAreaCallback, operatorCallback, operatorRemovedCallback, hostileCallBack, hostileRemovedCallback) {
-            this.playablearea = new PlayableArea();
+        function Map(map, gameZoneCallBack, operatorCallback, operatorRemovedCallback, hostileCallBack, hostileRemovedCallback, zoneCallback, zoneRemovedCallback) {
+            this.areas = [];
+            this.gameZone = new Zone();
             this.squads = [];
             this.map = map;
-            this.playableAreaCallback = playableAreaCallback;
+            this.gameZoneCallBack = gameZoneCallBack;
             this.operatorCallback = operatorCallback;
             this.operatorRemovedCallback = operatorRemovedCallback;
             this.hostileCallBack = hostileCallBack;
             this.hostileRemovedCallback = hostileRemovedCallback;
+            this.zoneCallback = zoneCallback;
+            this.zoneRemovedCallback = zoneRemovedCallback;
             this.hostiles = [];
         }
 
@@ -114,14 +117,36 @@ angular.module('socom-maps', [])
         Map.prototype.getSquad = function (squadId) {
             return this.squads[squadId];
         };
-        Map.prototype.setPlayableArea = function (playableareapoints) {
+        Map.prototype.setGameZone = function (gamezonepoints) {
+            if (!(gamezonepoints instanceof Array)) {
+                console.log('Trying to add an non Array object!!');
+            } else {
+                //console.log(this.playablearea);
+                var success = this.gameZone.setPoints(gamezonepoints);
+                if (success && this.gameZoneCallBack) {
+                    this.gameZoneCallBack(gamezonepoints);
+                }
+            }
+        };
+        Map.prototype.addZone = function (id, playableareapoints) {
             if (!(playableareapoints instanceof Array)) {
                 console.log('Trying to add an non Array object!!');
             } else {
                 //console.log(this.playablearea);
-                var success = this.playablearea.setPoints(playableareapoints);
-                if (success && this.playableAreaCallback) {
-                    this.playableAreaCallback(playableareapoints);
+                this.areas[id] = new Zone();
+                var success = this.areas[id].setPoints(playableareapoints);
+                if (success && this.zoneCallback) {
+                    this.zoneCallback(playableareapoints);
+                }
+            }
+        };
+        Map.prototype.removeZone = function (area) {
+            if (!operator instanceof Zone) {
+                console.log('Trying to remove an non Zone object!!');
+            } else {
+                delete this.squads[area.id];
+                if (this.zoneRemovedCallback) {
+                    this.zoneRemovedCallback(area);
                 }
             }
         };
@@ -165,18 +190,18 @@ angular.module('socom-maps', [])
 
         return Operator;
     })
-    .factory('PlayableArea', function () {
+    .factory('Zone', function () {
         /**
          * Constructor, with class name
          */
-        function PlayableArea() {
+        function Zone() {
             this.points = [];
         }
 
-        PlayableArea.prototype.setPoints = function (playableareapoints) {
+        Zone.prototype.setPoints = function (zonepoints) {
             var pointsAux = [];
-            for (var i = 0; i < playableareapoints.length; i++) {
-                var point = playableareapoints[i];
+            for (var i = 0; i < zonepoints.length; i++) {
+                var point = zonepoints[i];
                 if (!(point instanceof L.LatLng)) {
                     console.log('Trying to add an non L.LatLng object!!');
                     return false;
@@ -187,7 +212,7 @@ angular.module('socom-maps', [])
             this.points = pointsAux;
             return true;
         };
-        return PlayableArea;
+        return Zone;
     })
     .factory('Specialization', function () {
 
@@ -342,19 +367,21 @@ angular.module('socom-maps', [])
                     return seconds[coordSet] + (hundredths[coordSet] / 100);
                 }
                 this.setDMS = function setDMS(degrees, minutes, seconds, direction) {
-                    var val = degrees + (minutes / 60) + (seconds / 3600);
+                    var val = parseInt(degrees);
+                    val += parseFloat((minutes / 60));
+                    val += parseFloat((seconds / 3600));
                     if (direction == 'W' || direction == 'S') {
                         val *= -1;
                     }
                     if (coordSet == object.LATITUDE) {
                         object._latitude = val;
-                    }
-                    else {
+                    } else {
                         object._longitude = val;
                     }
                 }
             }
         }
+
         return CoordinatesConverter;
     })
     .directive('map', function ($ionicLoading, $ionicPopup, $ionicModal, Map, $rootScope, Direction, $timeout) {
@@ -572,9 +599,9 @@ angular.module('socom-maps', [])
                 var insidePlayableArea = function (map, latLng) {
                     var lat = latLng.lat, lng = latLng.lng;
                     var inside = false;
-                    for (var i = 0, j = map.playablearea.points.length - 1; i < map.playablearea.points.length; j = i++) {
-                        var xi = map.playablearea.points[i].lat, yi = map.playablearea.points[i].lng;
-                        var xj = map.playablearea.points[j].lat, yj = map.playablearea.points[j].lng;
+                    for (var i = 0, j = map.gameZone.points.length - 1; i < map.gameZone.points.length; j = i++) {
+                        var xi = map.gameZone.points[i].lat, yi = map.gameZone.points[i].lng;
+                        var xj = map.gameZone.points[j].lat, yj = map.gameZone.points[j].lng;
                         var intersect = ((yi > lng) != (yj > lng)) && (lat < (xj - xi) * (lng - yi) / (yj - yi) + xi);
                         if (intersect) inside = !inside;
                     }
@@ -702,18 +729,54 @@ angular.module('socom-maps', [])
                 };
                 //</editor-fold>
 
+                //<editor-fold desc="DRAW">
 
+                var generateMapControl = function () {
+                    var geocoder = new google.maps.Geocoder();
+
+                    function googleGeocoding(text, callResponse) {
+                        geocoder.geocode({address: text}, callResponse);
+                    }
+
+                    function filterJSONCall(rawjson) {
+                        var json = {}, key, loc, disp = [];
+                        for (var i in rawjson) {
+                            key = rawjson[i].formatted_address;
+                            loc = L.latLng(rawjson[i].geometry.location.lat(), rawjson[i].geometry.location.lng());
+                            json[key] = loc;
+                        }
+                        return json;
+                    }
+
+                    $scope.map.map.addControl(new L.Control.Search({
+                        callData: googleGeocoding,
+                        filterJSON: filterJSONCall,
+                        markerLocation: false,
+                        autoType: false,
+                        autoCollapse: true,
+                        minLength: 0,
+                        maxLength: 0,
+                        zoom: 17
+                    }));
+                };
+                //</editor-fold>
                 function initialize() {
                     //console.log('instantiating maps controller');
                     var mapOptions = {
                         center: new L.LatLng(43.07493, -89.381388),
-                        zoom: 15,
+                        zoom: $scope.mode === 'OPERATOR' ? 15 : 5,
                         zoomControl: false,
                         attributionControl: false,
                         maxZoom: 22,
-                        minZoom: 11
+                        minZoom: $scope.mode === 'OPERATOR' ? 8 : 0
                     };
-                    $scope.map = new Map(new L.Map($element[0], mapOptions), drawLines, addOperatorMarker, removeOperatorMarker, addHostileMarker, removeHostileMarker);
+                    $scope.map = new Map(
+                        new L.Map($element[0], mapOptions),
+                        drawLines,
+                        addOperatorMarker,
+                        removeOperatorMarker,
+                        addHostileMarker,
+                        removeHostileMarker);
                     var googleLayerSattelite = new L.Google('SATELLITE');
                     var googleLayerRoadMap = new L.Google('ROADMAP');
                     var googleLayerHybrid = new L.Google('HYBRID');
@@ -735,7 +798,6 @@ angular.module('socom-maps', [])
                         var compass = L.control.compass();
                         compass.addTo($scope.map.map);
                         //console.log('map ready');
-                        $scope.onCreate({map: $scope.map});
                         $scope.map.map.on('contextmenu', function (e) {
                                 var latLng = new L.LatLng(e.latlng.lat, e.latlng.lng);
                                 if (insidePlayableArea($scope.map, latLng)) {
@@ -768,6 +830,7 @@ angular.module('socom-maps', [])
                     } else if ($scope.mode === 'DRAW') {
                         var drawnItems = new L.FeatureGroup();
                         $scope.map.map.addLayer(drawnItems);
+                        generateMapControl();
                         var generateControl = function (zoneDefined) {
                             if (zoneDefined) {
                                 return new L.Control.Draw({
@@ -811,13 +874,16 @@ angular.module('socom-maps', [])
                             $scope.map.map.removeControl(currentControl);
                             currentControl = generateControl(true);
                             $scope.map.map.addControl(currentControl);
+                            $rootScope.$broadcast('zoneDefined', e.layer);
+                            console.log(e.layer);
                         });
-
-                        $scope.map.map.on('draw:deletestop', function (e) {
-                            console.log(e);
-                            drawnItems.removeLayer(e.target);
+                        $scope.map.map.on('draw:edited', function (e) {
+                            $rootScope.$broadcast('zoneUpdated', e.layers.getLayers()[0]);
+                        });
+                        var deleteLayer = function (layer) {
                             var elementsNum = 0;
-                            drawnItems.eachLayer(function (layer) {
+                            drawnItems.removeLayer(layer);
+                            drawnItems.eachLayer(function (x) {
                                 elementsNum++;
                             });
                             if (elementsNum == 0) {
@@ -825,10 +891,33 @@ angular.module('socom-maps', [])
                                 currentControl = generateControl(false);
                                 $scope.map.map.addControl(currentControl);
                             }
+                        };
+                        $scope.map.map.on('draw:deletestop', function(e){
+                            deleteLayer(e.target);
+                        });
+                        $scope.$on('layerRemoved', function () {
+                            console.log('layerRemoved');
+                            drawnItems = new L.FeatureGroup();
+                            $scope.map.map.addLayer(drawnItems);
+                            $scope.map.map.removeControl(currentControl);
+                            currentControl = generateControl(false);
+                            $scope.map.map.addControl(currentControl);
+                        });
+                        $scope.$on('layerAdded', function (event, layer) {
+                            //layer.addTo($scope.map.map);
+                            drawnItems.addLayer(layer);
+                            var elementsNum = 0;
+                            drawnItems.eachLayer(function (x) {
+                                elementsNum++;
+                            });
+                            $scope.map.map.removeControl(currentControl);
+                            currentControl = generateControl(true);
+                            $scope.map.map.addControl(currentControl);
                         });
 
                     }
                     //console.log('centering on position');
+                    $scope.onCreate({map: $scope.map});
                     centerOnCurrentLocation();
                 }
 
