@@ -46,12 +46,13 @@ angular.module('socom-maps', [])
         /**
          * Constructor, with class name
          */
-        function Hostile(latitude, longitude, enemiesNumber, direction) {
+        function Hostile(latitude, longitude, enemiesNumber, direction, timestamp) {
             this.id = Math.random();
             this.latitude = latitude;
             this.longitude = longitude;
             this.enemiesNumber = enemiesNumber;
             this.direction = direction;
+            this.timestamp = timestamp;
         }
 
         return Hostile;
@@ -128,26 +129,23 @@ angular.module('socom-maps', [])
                 }
             }
         };
-        Map.prototype.addZone = function (id, playableareapoints) {
+        Map.prototype.addZone = function (id, name, playableareapoints, color) {
             if (!(playableareapoints instanceof Array)) {
                 console.log('Trying to add an non Array object!!');
             } else {
                 //console.log(this.playablearea);
-                this.areas[id] = new Zone();
+                this.areas[id] = new Zone(id, name, [], color);
                 var success = this.areas[id].setPoints(playableareapoints);
                 if (success && this.zoneCallback) {
-                    this.zoneCallback(playableareapoints);
+                    this.zoneCallback(this.areas[id]);
                 }
             }
         };
-        Map.prototype.removeZone = function (area) {
-            if (!operator instanceof Zone) {
-                console.log('Trying to remove an non Zone object!!');
-            } else {
-                delete this.squads[area.id];
-                if (this.zoneRemovedCallback) {
-                    this.zoneRemovedCallback(area);
-                }
+        Map.prototype.removeZone = function (id) {
+            var area = this.squads[id];
+            delete this.squads[id];
+            if (this.zoneRemovedCallback) {
+                this.zoneRemovedCallback(area);
             }
         };
         Map.prototype.addOperator = function (squadId, operator) {
@@ -194,8 +192,11 @@ angular.module('socom-maps', [])
         /**
          * Constructor, with class name
          */
-        function Zone() {
-            this.points = [];
+        function Zone(id, name, points, color) {
+            this.id = id;
+            this.name = name;
+            this.points = points == undefined ? [] : points;
+            this.color = color;
         }
 
         Zone.prototype.setPoints = function (zonepoints) {
@@ -341,31 +342,31 @@ angular.module('socom-maps', [])
                         seconds[coordSet] = parseInt(leftover)
                         hundredths[coordSet] = parseInt((leftover - seconds[coordSet]) * 100);
                     }
-                }
+                };
                 this.getDegrees = function getDegrees() {
                     calc(object);
                     return degrees[coordSet];
-                }
+                };
                 this.getMinutes = function getMinutes() {
                     calc(object);
                     return minutes[coordSet];
-                }
+                };
                 this.getSeconds = function getSeconds() {
                     calc(object);
                     return seconds[coordSet];
-                }
+                };
                 this.getDirection = function getDirection() {
                     calc(object);
                     return direction[coordSet];
-                }
+                };
                 this.getHundredths = function getHundredths() {
                     calc(object);
                     return hundredths[coordSet];
-                }
+                };
                 this.getSecondsDecimal = function getSecondsDecimal() {
                     calc(object);
                     return seconds[coordSet] + (hundredths[coordSet] / 100);
-                }
+                };
                 this.setDMS = function setDMS(degrees, minutes, seconds, direction) {
                     var val = parseInt(degrees);
                     val += parseFloat((minutes / 60));
@@ -378,7 +379,7 @@ angular.module('socom-maps', [])
                     } else {
                         object._longitude = val;
                     }
-                }
+                };
             }
         }
 
@@ -396,6 +397,7 @@ angular.module('socom-maps', [])
                 var markerGroups = {};
                 var modal;
                 var operatorsMarkers = {};
+                var zonesMarkers = {};
                 var hostileMarkers = {};
                 var addMarkerEvents = function (map, marker, operatorName, operatorInfo) {
                     marker.bindPopup(new L.Popup().setContent(
@@ -410,7 +412,9 @@ angular.module('socom-maps', [])
                     var coordinates = new L.LatLng(operator.latitude, operator.longitude);
                     if (insidePlayableArea($scope.map, coordinates)) {
                         if (operatorsMarkers[operator.username] !== undefined) {
+                            markerGroups[squadId].removeLayer(operatorsMarkers[operator.username]);
                             operatorsMarkers[operator.username].setLatLng(coordinates);
+                            markerGroups[squadId].addLayer(operatorsMarkers[operator.username]);
                             $rootScope.$broadcast('operatorUpdated', operator);
                         } else {
                             var marker = new L.Marker(coordinates,
@@ -449,16 +453,21 @@ angular.module('socom-maps', [])
                                 $scope.layers[squadId] = new L.LayerGroup().addTo($scope.map.map);
                                 $scope.control.addOverlay($scope.layers[squadId], "Team");
 
-                                $scope.viewMode = L.control.viewmode({
-                                    operator: $scope.myLocation ? $scope.myLocation.getLatLng() : undefined,
-                                    squad: markerGroups[squadId]
-                                });
-                                $scope.viewMode.addTo($scope.map.map);
+                                if ($scope.mode === 'OPERATOR') {
+                                    $scope.viewMode = L.control.viewmode({
+                                        operator: $scope.myLocation ? $scope.myLocation.getLatLng() : undefined,
+                                        squad: markerGroups[squadId]
+                                    });
+                                    $scope.viewMode.addTo($scope.map.map);
+                                }
                                 $scope.map.map.addControl(L.control.zoom({position: 'bottomleft'}));
                             }
                             markerGroups[squadId].addLayer(marker);
                             markerGroups[squadId].addTo($scope.layers[squadId]);
                             operatorsMarkers[operator.username] = marker;
+                            if ($scope.viewMode !== undefined) {
+                                $scope.viewMode.setSquad(markerGroups[squadId]);
+                            }
                             $rootScope.$broadcast('operatorAdded', operator);
                         }
                     }
@@ -479,7 +488,18 @@ angular.module('socom-maps', [])
                     //console.log(hostileMarkers);
                     //$scope.map.removeOperator(1, $scope.map.getOperator(1, 6));
                 };
+
                 var addHostileMarker = function (hostile) {
+
+                    var now = new Date().getTime();
+                    var time = hostile.timestamp + 20000;
+                    var diff = time - now;
+                    //console.log('HOSTILEMARKER', now, time, diff);
+                    console.log(hostile.timestamp);
+                    if (diff <= 0) {
+                        return;
+                    }
+
                     var coordinates = new L.LatLng(hostile.latitude, hostile.longitude);
                     if (insidePlayableArea($scope.map, coordinates)) {
                         var icon = 'pin-hostile-direction-' + hostile.direction.identifier;
@@ -527,13 +547,16 @@ angular.module('socom-maps', [])
                             };
                             watchID = navigator.compass.watchHeading(onSuccess, onError, options);
                         }
+
                         $timeout(function () {
                             $scope.map.removeHostile(hostile);
                             if (navigator.compass) {
                                 navigator.compass.clearWatch(watchID);
                             }
-                        }, 10000);
+                        }, diff);
                         $rootScope.$broadcast('hostileAdded', hostile);
+
+
                     }
                 };
                 var centerOnCurrentLocation = function () {
@@ -593,8 +616,17 @@ angular.module('socom-maps', [])
                     }
                 };
                 var drawLines = function (points) {
-                    var gameArea = new L.Polygon(points, {color: 'red'}).addTo($scope.map.map);
+                    var gameArea = new L.Polygon(points, {color: '#FFF'}).addTo($scope.map.map);
                     $scope.control.addOverlay(gameArea, "Game Area");
+                };
+                var drawZone = function (zone) {
+                    console.log(zone.color);
+                    var zoneArea = new L.Polygon(zone.points, {color: zone.color === undefined ? 'red' : zone.color}).addTo($scope.map.map);
+                    zonesMarkers[zone.id] = zoneArea;
+                    $scope.control.addOverlay(zoneArea, zone.name);
+                };
+                var removeZone = function (zone) {
+                    $scope.map.map.removeLayer(zonesMarkers[zone.id]);
                 };
                 var insidePlayableArea = function (map, latLng) {
                     var lat = latLng.lat, lng = latLng.lng;
@@ -617,9 +649,9 @@ angular.module('socom-maps', [])
                                     title: 'Sighted Enemies Direction',
                                     btns: [[
                                         {
-                                            label: 'NE',
-                                            value: Direction.NORTH_EAST,
-                                            className: 'btn-direction-ne',
+                                            label: 'NW',
+                                            value: Direction.NORTH_WEST,
+                                            className: 'btn-direction-nw',
                                             hideLabel: true
                                         },
                                         {
@@ -629,18 +661,20 @@ angular.module('socom-maps', [])
                                             hideLabel: true
                                         },
                                         {
-                                            label: 'NW',
-                                            value: Direction.NORTH_WEST,
-                                            className: 'btn-direction-nw',
-                                            hideLabel: true
-                                        }
-                                    ], [
-                                        {
-                                            label: 'E',
-                                            value: Direction.EAST,
-                                            className: 'btn-direction-e',
+                                            label: 'NE',
+                                            value: Direction.NORTH_EAST,
+                                            className: 'btn-direction-ne',
                                             hideLabel: true
                                         },
+                                    ], [
+
+                                        {
+                                            label: 'W',
+                                            value: Direction.WEST,
+                                            className: 'btn-direction-w',
+                                            hideLabel: true
+                                        },
+
                                         {
                                             label: 'C',
                                             value: Direction.CAMPER,
@@ -648,16 +682,16 @@ angular.module('socom-maps', [])
                                             hideLabel: true
                                         },
                                         {
-                                            label: 'W',
-                                            value: Direction.WEST,
-                                            className: 'btn-direction-w',
+                                            label: 'E',
+                                            value: Direction.EAST,
+                                            className: 'btn-direction-e',
                                             hideLabel: true
                                         },
                                     ], [
                                         {
-                                            label: 'SE',
-                                            value: Direction.SOUTH_EAST,
-                                            className: 'btn-direction-se',
+                                            label: 'SW',
+                                            value: Direction.SOUTH_WEST,
+                                            className: 'btn-direction-sw',
                                             hideLabel: true
                                         },
                                         {
@@ -667,11 +701,11 @@ angular.module('socom-maps', [])
                                             hideLabel: true
                                         },
                                         {
-                                            label: 'SW',
-                                            value: Direction.SOUTH_WEST,
-                                            className: 'btn-direction-sw',
+                                            label: 'SE',
+                                            value: Direction.SOUTH_EAST,
+                                            className: 'btn-direction-se',
                                             hideLabel: true
-                                        },
+                                        }
                                     ], [
                                         {
                                             label: 'Cancel',
@@ -684,7 +718,8 @@ angular.module('socom-maps', [])
                                                 latitude: $scope.latLng.lat,
                                                 longitude: $scope.latLng.lng,
                                                 enemiesNumber: $scope.enemiesNumber,
-                                                direction: value
+                                                direction: value,
+                                                timestamp: new Date().getTime(),
                                             })
                                         }
                                         modal.hide();
@@ -764,11 +799,11 @@ angular.module('socom-maps', [])
                     //console.log('instantiating maps controller');
                     var mapOptions = {
                         center: new L.LatLng(43.07493, -89.381388),
-                        zoom: $scope.mode === 'OPERATOR' ? 15 : 5,
+                        zoom: $scope.mode === 'OPERATOR' || $scope.mode === 'COMSYS' ? 15 : 5,
                         zoomControl: false,
                         attributionControl: false,
                         maxZoom: 22,
-                        minZoom: $scope.mode === 'OPERATOR' ? 8 : 0
+                        minZoom: $scope.mode === 'OPERATOR' || $scope.mode === 'COMSYS' ? 8 : 0
                     };
                     $scope.map = new Map(
                         new L.Map($element[0], mapOptions),
@@ -776,7 +811,9 @@ angular.module('socom-maps', [])
                         addOperatorMarker,
                         removeOperatorMarker,
                         addHostileMarker,
-                        removeHostileMarker);
+                        removeHostileMarker,
+                        drawZone,
+                        removeZone);
                     var googleLayerSattelite = new L.Google('SATELLITE');
                     var googleLayerRoadMap = new L.Google('ROADMAP');
                     var googleLayerHybrid = new L.Google('HYBRID');
@@ -794,7 +831,7 @@ angular.module('socom-maps', [])
                         maxZoom: 22,
                         minZoom: 11
                     });
-                    if ($scope.mode === 'OPERATOR') {
+                    if ($scope.mode === 'OPERATOR' || $scope.mode == 'COMSYS') {
                         var compass = L.control.compass();
                         compass.addTo($scope.map.map);
                         //console.log('map ready');
@@ -892,7 +929,7 @@ angular.module('socom-maps', [])
                                 $scope.map.map.addControl(currentControl);
                             }
                         };
-                        $scope.map.map.on('draw:deletestop', function(e){
+                        $scope.map.map.on('draw:deletestop', function (e) {
                             deleteLayer(e.target);
                         });
                         $scope.$on('layerRemoved', function () {
