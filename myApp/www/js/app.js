@@ -1,4 +1,4 @@
-var app = angular.module('starter', ['ionic', "firebase", 'starter.controllers', 'socom-maps', 'hudModule'])
+var app = angular.module('starter', ['angularSpectrumColorpicker', 'ionic', "firebase", 'starter.controllers', 'socom-maps', 'hudModule'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {

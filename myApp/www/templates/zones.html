@@ -26,6 +26,16 @@
                         <button ng-click="manageZoneTypes()">Manage My</button>
                     </div>
                     <div class="list-item row">
+                        <label class="col">Color</label>
+                    </div>
+                    <div class="list-item row">
+                        <spectrum-colorpicker
+                                ng-model="zoneInEdition.color"
+                                format="'hex'">
+                        </spectrum-colorpicker>
+                        <input type="text" name="color" ng-model="zoneInEdition.color">
+                    </div>
+                    <div class="list-item row">
                         <label class="col">Capture Points</label>
                     </div>
                     <div class="list-item row">

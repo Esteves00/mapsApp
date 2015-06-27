@@ -140,7 +140,7 @@ angular.module('starter.controllers', ['starter.services'])
         };
         $scope.selectedZone = undefined;
         $scope.selectedZoneType = undefined;
-        $scope.zoneInEdition = {};
+        $scope.zoneInEdition = {color:'#ff0000'};
         $scope.zoneTypeInEdition = {};
         $scope.getAllZoneTypes = function () {
             MasterStubService.getAllZoneTypes().success(function (data) {
@@ -192,7 +192,7 @@ angular.module('starter.controllers', ['starter.services'])
                         } else {
                             $rootScope.$broadcast('layerRemoved');
                         }
-                        $scope.zoneInEdition = {};
+                        $scope.zoneInEdition = {color:'#ff0000'};
                         angular.forEach($scope.zones, function (zone) {
                             if (zone.id == selectedZone) {
                                 $scope.zoneInEdition = angular.copy(zone);
@@ -206,7 +206,7 @@ angular.module('starter.controllers', ['starter.services'])
                 });
             }
             else {
-                $scope.zoneInEdition = {};
+                $scope.zoneInEdition = {color:'#ff0000'};
                 $scope.zoneTypeInEdition = {};
                 $rootScope.$broadcast('layerRemoved');
             }
@@ -287,17 +287,18 @@ angular.module('starter.controllers', ['starter.services'])
                     }
                 });
             };
+            console.log($scope.zoneInEdition.color);
             if ($scope.zoneInEdition.id === undefined) {
                 console.log($scope.zoneInEdition);
                 console.log($scope.zoneTypeInEdition);
-                MasterStubService.createMasterZone($scope.zoneTypeInEdition.id, $scope.zoneInEdition.description, $scope.zoneInEdition.capture_points)
+                MasterStubService.createMasterZone($scope.zoneTypeInEdition.id, $scope.zoneInEdition.description, $scope.zoneInEdition.capture_points, $scope.zoneInEdition.color)
                     .success(function (data) {
                         saveCoords(data.response);
                     }).error(function (error) {
                         console.log(error);
                     });
             } else {
-                MasterStubService.updateMasterZone($scope.zoneInEdition.id, $scope.zoneTypeInEdition.id, $scope.zoneInEdition.description, $scope.zoneInEdition.capture_points)
+                MasterStubService.updateMasterZone($scope.zoneInEdition.id, $scope.zoneTypeInEdition.id, $scope.zoneInEdition.description, $scope.zoneInEdition.capture_points, $scope.zoneInEdition.color)
                     .success(function (data) {
                         saveCoords($scope.zoneInEdition.id);
                     }).error(function (error) {
@@ -307,7 +308,7 @@ angular.module('starter.controllers', ['starter.services'])
         };
         $scope.cancel = function () {
             //TODO: refresh controls
-            $scope.zoneInEdition = {};
+            $scope.zoneInEdition = {color:'#ff0000'};
             $scope.zoneTypeInEdition = {};
             $scope.getZoneCoordinates($scope.selectedZone);
         };
@@ -322,7 +323,7 @@ angular.module('starter.controllers', ['starter.services'])
                     MasterStubService.deleteMasterZone($scope.selectedZone);
                     $scope.selectedZone = undefined;
                     $scope.selectedZoneType = undefined;
-                    $scope.zoneInEdition = {};
+                    $scope.zoneInEdition = {color:'#ff0000'};
                     $scope.zoneTypeInEdition = {};
                     $scope.getAllZoneTypes();
                     $scope.getAllMasterZones();
@@ -338,7 +339,7 @@ angular.module('starter.controllers', ['starter.services'])
             }).then(function (modal) {
                 ($scope.modal = modal).show();
             });
-        }
+        };
 
         $scope.$on('zoneTypesModalClosed', function () {
             console.log('asdas');
@@ -366,7 +367,9 @@ angular.module('starter.controllers', ['starter.services'])
             $scope.masterZoneTypeInEdition = selectedZoneType ? {
                 id: selectedZoneType.id,
                 name: selectedZoneType.name
-            } : {};
+            } : {
+                color: '#ff0000'
+            };
         };
         $scope.cancelMasterZoneType = function () {
             $scope.masterZoneTypeInEdition = {};
@@ -422,5 +425,5 @@ angular.module('starter.controllers', ['starter.services'])
         };
         $scope.closeModal = function () {
             $rootScope.$broadcast('zoneTypesModalClosed');
-        }
+        };
     });
